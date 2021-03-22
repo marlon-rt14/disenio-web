@@ -1,0 +1,4 @@
+FIXED:
+Es igual que el absolute pero fijado.
+
+STICKY: Es como una combinacion entre FIXED y RELATIVE, es decir, se comporta como un fixed en el momento en que llega al elemento con esta propiedad.

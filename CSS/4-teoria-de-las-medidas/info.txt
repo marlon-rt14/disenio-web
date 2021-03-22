@@ -1,0 +1,26 @@
+podemos establecer las medidas por:
+* px
+* cm
+* mm
+* pt
+
+mediad relativas: Las medidad relativas son 
+* rem: Tiene como referencia el root y tambien se usa bastante, tiene ventajas sobre em pero es menos comun usar
+* em: Por defecto 1em son 16px, eso lo decide el navegador o 
+1em va a ser igual al valor que le demos a su caja contenedora
+
+tambien funciona para el margin, padding, todo lo que se pueda medir funciona el "em"
+
+sacar valores por defecto:
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+para aplicar medidas relativas se trabaja:
+* vw (view por width)
+* vh (view por height)
+
+Cuando se trabaja con porcentaje se lo hace por el porcentaje de la caja que lo contine. Por eso es mejor hacerlo con el view por
+
+LOS PORCENTAJES TIENEN QUE VER CON TEORIA DE CAJAS

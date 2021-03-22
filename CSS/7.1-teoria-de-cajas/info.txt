@@ -1,0 +1,55 @@
+
+OUTLINE
+Es como border pero sin afectar a la caja ni a las demas cajas, osea no ocupa un espacio real en el DOM (Document Option Model), es como una especie de localizador.
+
+
+
+##############################################################################
+Positions (static, Absolute, relative, inherit, sticky)
+
+Lo que hace es posicionar los elementos. Estar posicionado significa que adquiere nuevas propiedades y nos permiten hacer varias cosas: top, lef, index... Cuando un elemento esta posicionado significa que va a aumentar el flujo HTML, el flujo HTML es el orden en el que ponemos todos los elementos,
+
+Cuando posicionamos un elemento hacemos que adquiera 4 nuevas propiedades, esas son: top, left, right, bottom; las que mas importan son: top, left.
+
+El espacio reservado de una caja con posicionamiento relative, se mantiene, es decir que las demas cajas no van a ocupar o reemplazar ese espacio.
+
+El punto de referencia siempre va ser el top, a partir de alli es de donde se va a mover, y tambien se le pude dar valores negativos. Por lo general debe usuarse solamente el top y el left.
+
+static: Es el valor por defecto, basicamene sifnifica que no esta posicionado
+
+absolute: Es como relative pero hay dos cosas que cambian.
+1.- Elimina su propio espacio reservado, es decir cada elemento tiene un espacio reservado, es donde aparecera, el absolute hace que ese espacio reservado ya no este reservado para ese elemento, entonces es un espacio vacio y los demas elementos pueden ocupar su lugar.
+
+Puede ocupar el view-port o el contenedor, que es todo lo que muestra el navegador, toda la pantalla, al presionar F12 para la pantllan completa; eso es el view-port, Y SE POSICIONARA RESPECTO AL CONTENEDOR.
+
+POR QUE SE POSICIONA CON RESPECTO AL CONTENEDOR? Cuando no definimos top, left, button o right se posiciona a partir del contendor, y toma como punto de referencia el lugar donde quedo, el punto de referencia es la caja contendora.
+
+ademas cuando usamos absolute, la caja contenedora se ajusa al contenido.
+
+2. Cuando trabajamos position: absolute, aunque sea un elemento bloque el ancho se va a ajustar al contenido, se ajusta el tamaño de la caja al contenido. Con position: relative eso no pasa
+
+fixed: Es igual que el absolute pero fijado.
+
+sticky: Se espcifica en que momento va a ser fixed. es como una mezcla entre fixed y relative
+
+##############################################
+Z-INDEX
+
+Emtre mas alto sea el valor, estara mas adelante de los elementos, esto es muy util cuando se superponen los elementos, cuando esta uno encima de otro.
+
+Es recomendble ajustar su posicion de 100 en 100  o 50 en 50, asi no hay problema si en un futuro se agregar nuevos elementos en el medio
+
+Solo en elementos posicionados
+conflictos e hijos
+
+####################################################################
+Displays (block, inline-block, flex, grid, none)
+
+
+hover
+
+top, left, right, botto
+
+
+NOTA: Otra forma de abreviar
+0.2 => .2

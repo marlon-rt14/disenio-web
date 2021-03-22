@@ -1,0 +1,12 @@
+.contact-form{
+    font-family: 25px;
+}
+
+.contact-form__h2{ /*Formas de personalizar una tipografia*/
+    font-size: 2em; /*Es el tamaño de la letra*/
+    font-family: 'Lobster', sans-serif, cursive;
+    /*font-family: 'Potta One', cursive;*/
+    font-weight: 700;
+    line-height: 3;
+    color: red;
+}

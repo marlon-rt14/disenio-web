@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--la metodologia BEM dice que primer es de poner el nombre del contenedor seguido de dos guiones bajos
+    
+    los dos guiones medios significa que todo lo anterior va a ser igual a los demas elementos del mismo tipo, pero, hay uno que va a ser especial, para marcar un elemento que va a ser distinto del resto.
+
+    los dos guines bajos solo se trabaja se pone cuando se trabaja por bloques,
+    como: <div><section><article>
+
+    de esa manera no nos hacemos tanto problema con especifidad, que first child, que seleccionando por herencia, etc-->
+    <div class="contact-form">
+        <input type="text" class="contact-form__input--active">
+        <input type="password" class="contact-form__input">
+    </div>
+    <div class="suscriber-form">
+        <input type="text" class="suscriber-form__input--active">
+        <input type="password" class="suscriber-form__input">
+    </div>
+</body>
+</html>

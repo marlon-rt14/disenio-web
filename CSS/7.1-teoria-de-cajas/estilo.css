@@ -1,0 +1,87 @@
+* {
+  font-family: "Lobster", cursiva;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+/*.caja1, .caja2 {
+    width:200px;
+    height:200px;
+}*/
+
+/*.caja1 {
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: auto; /*Arriba y abajo lo que ya esta, y a los costados 50 y 50, el tamño total del conentendor menos la mitad de la caja del margin lef y right, lo centra.
+  outline: 10px solid blue;
+}*/
+
+div {
+  display: block;
+  background: green;
+  position: absolute;
+}
+
+div div {
+  height: 100px;
+  width: 100px;
+  background-color:yellow;
+}
+
+.contenedor {
+  margin: 100px;
+  position: relative;
+  border: 4px solid red;
+  margin: 50px auto;/*La propiedad auto es como decir centrar, una forma abreviada de; margin: left; margin: right. Y solo funciona horaizontalmetne*/
+  height: 450px;
+  width: 450px;
+}
+
+.caja1 {  
+  right:0;
+  bottom: 0;
+}
+
+.caja2 {
+  left: 0;
+    /*position: relative;
+    top: 60px;
+    left: 20px;
+    z-index: 1;*/
+}
+
+.caja3 {
+  right:0;
+  /*position: relative;*/
+}
+
+.caja4 {
+  bottom:0;
+}
+
+.caja5 {
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*.contenedor {
+    width: 300px;
+    height: 300px;
+    background: blue;
+    margin: 40px;
+    position: relative;
+}
+
+.hijo {
+background: orange;
+height: 120px;
+width: 120px;
+position: relative;
+top: -20px;
+left: -20px;
+z-index: -1;
+}*/

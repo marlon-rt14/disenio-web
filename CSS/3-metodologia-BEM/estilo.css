@@ -1,0 +1,11 @@
+
+/*otra forma de seleccionar solo un item del mismo tipo
+es con el evento: :first-child
+
+.contact-form__input:first-child{
+    color:red;
+}*/
+
+.contact-form__input--active{
+    color:red;
+}

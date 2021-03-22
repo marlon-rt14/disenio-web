@@ -1,0 +1,24 @@
+Los navegadores traen un estilo por defecto, los espacios, los colores, todo. Es decir cuando solo se trata de codigo html y no apliacmos un estilo en CSS, el navegador utiliza todos los valores por default.
+
+Pero pasa que aveces los navegadores no son tan buenos, que causan un monton de problemas, por ejemplo el padding, para ello se usa "normalize", para reniciar los estilos.
+
+Para hacerlo abrimos el navegador y en el buscador escribimos "normalize.css", le damos en la primera pagina que salta, la descargamos (clic derecho sobre la pagina de codigo que nos arroja -> Guardar como -> en el nombre escribimos normalize.css -> Guardar). O seguimos las instrucciones que nos dice la pagina. 
+
+Otra manera de incluirlo es copiar el enlace de la pagina donde nos mostro el codigo CSS para descargar, y en lugar de enlazar en nuestra pagina a normalize.css, lo hacemos de manera online. Ejemplo:
+<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+###################################################
+
+
+img {
+  border-style: none;
+  max-width: 100%; Es importante aregar esta linea para que en los moviles utilice el 100% y no se nos pase
+}
+
+* {
+  box-sizing: border-box; Es importante agregar el border-box
+}
+
+Una vez echo todo eso, ya podemos decir que podemos trabajar al 100% con CSS.
+
+NOTA: Si queremos poner una unidad de medida en '0', es mejor poner '0', sin px, em, rem, etc. Porque cualquier unidad multiplicada por cero, siempre da cero.

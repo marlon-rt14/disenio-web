@@ -1,0 +1,63 @@
+
+box-model: El box-model contiene:
+content => Es lo que tenemos de texto. Se modifica con line-height
+padding => Se modifica con: padding
+border => Se modifica con: border
+margin => Se modifica con margin
+Y cacada uno de ellos tiene una jerarquia
+
+#########################################################################
+
+Propiedades del texto(tamaño, tipo de letra, grosor, letra, font-style, text-decoration, list-style)
+
+Hay dos tipos de cajas en todo HTML.
+
+Las que son en linea: Un elemento en linea se va a ajustar al solo a su contenido. Ejemplo: <b>
+
+Las que son en bloque: Estas son las más importantes ya que forman bloque, siempre se van a ajustar al ancho de su contenido. Ejemplo: <h2>
+
+Todo esto es por defecto, pero se puede cambiar. Podemos hacer que <b> se comporte como <h2> y viceversa.
+
+La propiedad 'display' es una propiedad que nos permite cambiar el comportamiento de las cajas. Ejemplo:
+
+h2 {
+    display: block/inline;
+    inline-block => para que pueda adquirir las propiedades de un elemento en linea pero se comporte como un elemento en bloque.
+}
+
+Y tanto elementos en bloque o en linea tienes sus propiedades, por ejemplo el height en un elemento en linea no esta permitido.
+
+###############################################################################
+
+Algunas propiedades de caja (tamaño, background color, image, border, boder-radius, padding, margin, box-shadow)
+
+Propiedades de caja: Las propiedades que modifican o afectan a las cajas, o al contorno o al entorno de las cajas.
+
+padding: Es la distancia que hay entre el texto y la caja, la distancia entre los bordes de la caja y el texto, entonces hay 4 paddings. left, top, right, bottom. Es una propiedad que se puede acortar.
+
+/*padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;*/
+/*Se puede acortar el padding de la siguiente manera, y todos los lados del padding tienen el mismo tamaño*/
+    padding: 20px;
+/*Tambien se puede ajustar por alto y ancho. (padding: height width)*/
+    padding: 20px 30px;
+    /*Tambien se puede escribir de la siguiente manera si se desea un tamaño distinto para cada lado. (padding: top right bottom lef)*/
+
+margin: Es la distancia que hay entre dos cajas, y aplica los mismos lados que al padding.
+
+border: Es el bordr
+
+border-top: Se puede aplicar las mismas caracteristicas que marign y padding en los tamaños.
+border-style: estilo
+border-color: color
+
+Se puede resemir en:
+border: tamaño style color;
+
+box-shadow: La sombra que le queremos dar a la caja
+box-shadow: ejeX ejeY tamaño_desenfoque borde(generalmente se le da '0') color
+box-shadow: 2px 2px 15px 9 #000;
+
+###################################################################

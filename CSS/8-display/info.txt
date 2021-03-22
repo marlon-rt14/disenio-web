@@ -1,0 +1,21 @@
+BLOCK
+INLINE: Se usa generalmente para textos
+
+INLINE-BLOCK: Es como el BLOCK, pero le podemos dar el ancho y el ato, es decir le podemos modificar las dimensiones de la caja. Que se comporte como un bloque pero que el tamaño de la caja de acuerdo al contenido, e inclusive se puede poner uno al lado del otro.
+
+FLEX: Se comporta como BLOCK
+GRID: Se comporta como BLOCK
+
+INLINE-FLEX
+INLINE-GRID
+
+##############################################################################
+
+TABLE: Se comporte como tabla
+INLINE-TABLE: Se comporte como tabla en linea
+LIST-ITEM: Se comporte como una lista
+TABLE-CELL: Es como comportarse como cada una de las celdas de una tabla
+TABLE-ROW: Se comporta como una fila de la tabla
+TABLE-COLUMN: Se comporta como una columna de una tabla
+
+NOTA: Las tablas estan en desuso y las propiedades como los display tambien quedaron en desuso

@@ -1,0 +1,43 @@
+Si queremos trabajar correctamente, debemos manejarnos de tal forma en que los ID sean unicos. Los ID son identifcadores no se deben repetir. Ademas el ID tiene mas rango de especifidad.
+
+Estructura basica de CSS
+selector{
+    propiedad: valor
+}
+
+CSS selector (Todos los tipos de selectores)
+Universal
+* {
+    color: red; (Es mejor poner el codigo de color)
+}
+
+de tipo => Seleccionamos directamente por el nombre de las etiquetas
+h1 {
+    color: red;
+}
+
+clases 
+.nombre_de_la_clase{
+    color:red;
+}
+
+ID
+#nombre_del_elemento{
+    color:blue;
+}
+
+por atributo 
+[nombre_del_atributo="valor"]{
+    color: green;
+}
+
+descendiente
+etiqueta_del_contenedor nombre_etiqueta{
+    color:red;
+}
+
+Las pseudo clases son cuando en un evente se genera una seleccion
+pseudo-clases
+h1:hover{
+    color:red;
+}

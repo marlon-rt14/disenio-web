@@ -1,0 +1,49 @@
+/*UNIVERSAL
+* {
+    COLOR: red;
+}*/
+
+/*DE TIPO
+h1 {
+    color: red;
+}*/
+
+/*POR CLASES
+.titulo-h2{
+    color: red;
+}
+
+/*POR ID
+#element{
+    color: blue;
+}*/
+
+/*POR ATRIBUTO
+[rancio="sii"]{
+    color:green;
+}*/
+
+/*POR DESCENDENCIA*/
+h2 p {
+  color: red;
+}
+
+h2 b {
+  color:aqua;
+}
+
+.h2-class p{
+    color: blue;
+}
+
+.h2-class2 b{
+    color: green;
+}
+
+.h2-class2 b span{
+    color: purple;
+}
+
+b:hover{
+    color: blue;
+}

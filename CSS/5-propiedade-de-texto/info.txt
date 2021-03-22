@@ -1,0 +1,16 @@
+font-size: es el tamaño de la letra
+font-family: es la tipografia
+line-height: es la altura de la caja de la letra, se centra al medio; el espacio que ocupa cada letra
+font-weight: es el grosor de la letra, aveces depende del tipo de fuente
+font-stretch: es inutil
+font-variant: es inutil
+
+MEDIDAS ESTATICAS
+px(pixeles), cm(centimetros), mm(milimetros), pt(puntos)
+
+MEDIDAS RELATIVAS
+Sirven para adaptar el tamaño a la resolucion de la pantalla, Responsive design
+rem(tiene ligeras ventajas sobre em), em
+- Por defecto 1em son 16px, esta medida se lo da el navegador, depende. 
+- Para cambiar el valor por defecto de 1em se debe cambiar el valor de su contenedor. Es decir se hereda, si el contenedor tiene 20px, entonces 1em vale 20px. (emt = px . n_em)
+- Las medidas relativas funcionan con cualquier propiedad que trabaje con unidades de midida (margin, padding, height, weight, etc), todo lo que se pueda medir es de esta forma.

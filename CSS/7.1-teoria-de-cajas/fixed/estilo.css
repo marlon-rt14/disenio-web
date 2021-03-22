@@ -1,0 +1,17 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    font-weight:100px;
+}
+
+/*body {
+    padding-top: 100px;
+}*/
+
+.caja-fixed {
+    background:red;
+    /*position:fixed;*/
+    position: sticky;
+    /*margin: -100px;*/
+    top: 0;
+}
