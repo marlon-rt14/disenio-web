@@ -1,10 +1,11 @@
 BLOCK
 INLINE: Se usa generalmente para textos
 
-INLINE-BLOCK: Es como el BLOCK, pero le podemos dar el ancho y el ato, es decir le podemos modificar las dimensiones de la caja. Que se comporte como un bloque pero que el tamaño de la caja de acuerdo al contenido, e inclusive se puede poner uno al lado del otro.
+INLINE-BLOCK: Es como el BLOCK, pero le podemos dar el ancho y el ato, es decir le podemos modificar las dimensiones de la caja. Que se comporte como un bloque pero que el tamaño de la caja de acuerdo al contenido, e inclusive se puede poner uno al lado del otro. Hace que se ajuste el tamaño de la caja al contenido
+Hay etiquetas html que por defecto ya vienen con la propiedad inline, por ejemplo <b></b>
 
-FLEX: Se comporta como BLOCK
-GRID: Se comporta como BLOCK
+FLEX: Se comporta como BLOCK. Pero los elementos que estan dentro de la caja no. Para ello esta flex-container y grid-container.
+GRID: Se comporta como BLOCK. Pero los elementos que estan dentro de la caja no. Para ello esta flex-container y grid-container.
 
 INLINE-FLEX
 INLINE-GRID

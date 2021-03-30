@@ -1,0 +1,13 @@
+PSEUDO-ELEMENTOS
+No forman parte del DOM, pero podemos ver los efectos visuales, es como el ouline per no afecta al DOM
+
+::first-line       | BLOCK 
+Solamene funciona en los elementos en bloque, funciona en inline-block, block, flex, grid, cualquiera menos inline. Si forma parte del DOM.
+
+::first-letter     | BLOCK 
+Solamene funciona en los elementos en bloque, funciona en inline-block, block, flex, grid, cualquiera menos inline. Si forma parte del DOM.
+
+::placeholder
+::after            | HIJOS - CONTENT (NECESARIO) - INLINE
+::before           | HIJOS - CONTENT (NECESARIO) - INLINE
+::selection

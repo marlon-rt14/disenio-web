@@ -1,2 +1,0 @@
-La propiedad 
-Inline: Hace que se ajuste el tamaño de la caja al contenido

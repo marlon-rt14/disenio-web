@@ -1,0 +1,15 @@
+overflow: Es lo que sobra de la pantalla,
+
+el valor por defecto es visible. Y es short harm property, lo que significa que se puede cambiar los valores tanto para el eje X y Y, horizontal y vertical.
+
+Ejemplo:
+overflow: scroll;
+overflow-x: scroll;
+overflow-y: hidden;
+
+PROPIEDADES
+visible: Es irrelevante porque es el valor por defecto, el contenido sobrepasa el tamaño de la caja
+
+auto: Detecta en caso del que el contenido se sobrepase al tamaño de la caja, lo que hace es agregar un scroll a la caja. 
+
+scroll: Pone si o si una barra de scroll a la caja, tanto en vertical como en horizontal. con "auto", solo si es necesario.
