@@ -1,0 +1,5 @@
+Buscar en google: Lista de valores de cursores css
+
+De esa manera sabremos todos los tipos de valores para el cursor que existen.
+
+Solo cambia el aspecto del cursor, mas no la funcion

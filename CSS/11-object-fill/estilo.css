@@ -1,0 +1,25 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+.caja {
+    margin: 20px;
+    width: 600px;
+    height: 300px;
+}
+
+.caja img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: left;
+}
+
+/*.caja2 {
+    background: red;
+    display: flex;
+
+}*/

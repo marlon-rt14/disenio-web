@@ -1,0 +1,18 @@
+Object-fill: Se trabaja con imagenes
+
+fill:
+contain: Es el valor que viene por defecto, hace que las resoluciones de la imagen se ajusten al contenedor. Hace las resoluciones de la imagen sean las mimas pero ajustandose al contenedor.
+
+cover: La imagen se ajusta al contenedor y recorta los demas bordes
+
+none: Le importa un carajo y se queda con la que mas le conviene, esto nos sirve cuando las imagenes no son tan grandes de lo contrario se va a ver solo un pedacito de la imagen. Par eso es scale-down. None, agranda la imagen a lo que tiene que ser, al tamaño real.
+
+scale-down: Se queda con la mejor propiedad hace, que es mas pequeño: contain o none. Si none es mas chiquito entonces deja none, si contain es mas chiquito entonces deja contain.
+
+OBJECT-POSITION
+left: se muestra mas del lado izquierdo de la imagen
+right: se muestra mas del lado derecho de la imagen 
+top: del lado de arriba
+bottom: del lado de abajo
+
+Tambien tiene medidas: Por ejemplo le podemos dar 1em, y la imagen se recorre 1em desde el borde de la imagen, no del contenedor, si no de la imagen.

@@ -4,8 +4,9 @@
     font-weight: 100;
 }
 
-.texto {
+/*.texto {
     padding: 20px;
+    /*display: block;
 }
 
 .texto::first-line {
@@ -14,4 +15,68 @@
 
 .texto::first-letter {
     font-size: 5em;
+}*/
+
+/*form {
+    margin: 100px auto;
+    display: block;
+    background-color: #555;
+    padding: 100px;
+    width: 50%;
+}*/
+
+input {
+    padding: 6px;
+    width: 100%;
 }
+
+input::placeholder {
+    color:red;
+    background-color: yellow;
+}
+
+input::selection{
+    color: blue;
+    background-color:green;
+}
+
+.form {
+    margin: 100px auto;
+    display: block;
+    background-color: #999;
+    padding: 100px;
+    width: 50%;
+}
+
+b::before {
+    content: "Me suscribi";
+    color: #fff;
+}
+
+b::after {
+    content: "todo tendencias";
+    color: red;
+    background: #632;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

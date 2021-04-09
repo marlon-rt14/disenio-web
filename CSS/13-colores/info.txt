@@ -1,0 +1,24 @@
+COLRES
+
+    COLOR NAME
+
+    EXADECIMAL
+
+    RGB
+
+    RGBA
+
+    HSL
+
+    HSLA
+
+Es recomendable trabajar con hexadecimal o RGB porque que de lo contrario el navegador es el que establece el color, puede ser por ejemplo un rojo mas clar o un rojo mas oscuro, puede suceder aveces, hay reglas y estandares que seguir lo cual casi siempre es el mismo tipo de color, casi.
+
+HSL casi no se usa.
+
+Los colores rojo, verde y azul son colores primarios en informatica y son la base para formar todo el resto de colores.
+
+En RGB y HSL lo unico que cambia es la forma en que medimos.
+
+RGB
+Para mezclar colores con RGB, es como si tuvieramos tres baldes de pintura y los valores para medir van del 0 - 255, siendo el 255 como el color completo de la pintura y el '0', el mas oscuro

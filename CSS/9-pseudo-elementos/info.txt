@@ -8,6 +8,8 @@ Solamene funciona en los elementos en bloque, funciona en inline-block, block, f
 Solamene funciona en los elementos en bloque, funciona en inline-block, block, flex, grid, cualquiera menos inline. Si forma parte del DOM.
 
 ::placeholder
+::selection
+
+Los elementos que forman parte de la etiqueta content, no forman parte del DOM 
 ::after            | HIJOS - CONTENT (NECESARIO) - INLINE
 ::before           | HIJOS - CONTENT (NECESARIO) - INLINE
-::selection

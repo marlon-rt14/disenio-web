@@ -1,0 +1,69 @@
+* {
+  font-family: "Sen", sans-serif;
+  font-size: 20px;
+  font-weight: 100px;
+}
+
+.caja1 {
+  height: 200px;
+  width: 200px;
+  background: slateblue;
+  /*transition: background 1s, height 1s, width 1s;*/
+  transition: all 1s; /*Para poner todo en 1 segundo*/
+}
+
+.caja1:hover {
+  background: darkslateblue;
+  height: 300px;
+  width: 300px;
+}
+
+.cajaLink {
+  margin: 30px;
+  display: block;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: violet;
+}
+
+a {
+  color: green;
+}
+
+.cajaActive {
+  width: 250px;
+  height: 250px;
+  background: red;
+  margin: 25px;
+  transition: all 1s;
+}
+
+.cajaActive:active {
+  background: blue;
+  width: 600px;
+}
+
+.cajaFocus {
+  margin: 25px;
+  background: darkgray;
+  transition: all 1s;
+}
+
+.cajaFocus:focus {
+  background: white;
+  width: 600px;
+}
+
+.cajaLang {
+    margin: 25px;
+}
+
+.cajaLang b:lang(en) {
+    background: red;
+    padding: 20px;
+}

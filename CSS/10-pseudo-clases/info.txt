@@ -1,0 +1,23 @@
+Pseudo-Clases
+
+transition: es una propiedad que nos permite cambiar la velocidad del tiempo en que ocurren las transiciones, como por ejemplo en el hover
+
+:hover
+Los efectos que van a ocurrir cuando el mouse esta encima.
+
+:link
+Cambiar un link que todavia no visitamos
+
+:visited
+Cambiar un link, el estilo de un link que ya ha sido visitado
+
+:active
+Es al dejar aplastado un boton, cambian los estilos
+
+:focus
+Esto se aplica mas a los inputs, cuando está el elemento en foco
+
+:lang
+Es como una funcion o un metodo, es decir que le tenemos que pasar un parametro. El paramentro es el codigo del idioma por ejemplo: Español => es English => en. Detecta cualquier cosa que este por ejemplo en ingles y le cambia las propiedades. (NOTA: Lang casi no se usa)
+
+NOTA: el :link y :visited tienen mucha mas priridad que la propia etiqueta sin pseudo-clases 
