@@ -1,0 +1,33 @@
+* {
+  font-family: "Itim", cursive;
+  font-weight: 100px;
+}
+
+div {
+  width: 39%;
+  display: inline-block;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.caja1 {
+  background-color: #ddd;
+}
+
+.caja2 {
+  background-color: #bbb;
+}
+
+@media only screen and (max-width: 800px) {
+  div {
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+      font-size: 20px !important;
+  }
+}

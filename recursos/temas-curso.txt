@@ -1,0 +1,14 @@
+9) Cursor:
+	http://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor
+
+10) Colres:
+		COLOR NAME
+		HEXADECIMAL
+		RGB
+		RGAB
+		HSL
+		HSLA
+
+11) Responsive Design - Mobile first
+
+12) flexbox
