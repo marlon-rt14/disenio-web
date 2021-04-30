@@ -1,0 +1,43 @@
+Los flex-items tambien tienen propiedades reservadas, es decir solo funcionan cuando su contenedor es flex.
+
+{
+    aling-self (cross-axis)
+}
+
+FUNCIONAMIENTO DEl MARGIN 
+
+{
+* Hace es lo contrario de cuando se posiciona dentro de un contenedor normal: Por ejemplo, al hacer margin-left: auto se posiciona a la derecha del contendeor, al hacer margin-bottom:auto se posiciona arriba, y para centrar una forma abreviada es margin:auto; 
+    margin-(direction): 
+}
+
+{
+* Toma el espacio sobrante de la linea o fila y se reparte entre sus cajas para que todas tengan el mismo width. Ejemplo: flex-grow: 1; El numero indica el numero de espacios que va a tener cada caja.
+    flex-grow: (espacio asignado + sobrante / grows) (main axis)
+}
+
+{
+* Nos pemite elegir que caja va a dar mas espacio cuando no alcance el lugar disponible.
+    flexh-shrink: Espacio que "cede" (main-axis)
+}
+
+{
+* Es lo mismo que el width. Pero, tiene mas importancia, asi que no importa si lo escribimos en una linea mas arriba o mas abajo. El valor que a tomar es que le asigenemos con el flex-basis.
+    flex-basis: Medicion antes de encogerse (en auto (defect value)), agarra el width, y si no tiene mas prioridad)(main axis)
+}
+
+{
+* Es una forma abreviada. Y necesita al menos 1 parametro para funcionar.
+    flex: 
+        flex-grow:
+
+        flex-shrink:
+
+        flex-basis: (Al menos el primer parametro obligatorio)
+}
+
+{
+* Como en el z-index, pero en el eje en el que apunta el main-axis
+* Es como se posiciona un elemento uno encia de otro, no sobre "otro" como lo hace el z-index normal. Si no encima . Si el main-axis apunta a la derecha, el elemento con el order mas grande va a estar mas a la derecha
+    order:
+}

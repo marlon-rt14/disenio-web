@@ -1,0 +1,47 @@
+* {
+    font-family: 'Arya';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.flex-container {
+    /*PROPIEDADES QUE SE APLICA EN EL CONTENEDOR
+    PERO QUE AFECTAN A LOS ITEMS*/
+    display: flex;
+    /*flex-direction: column-reverse;*/
+    /*flex-flow: column wrap;*/
+    /*justify-content: space-evenly;*/
+    height: 100vh;
+    /*Si se usa align-items ya no se usa align-content,
+    Hay que saben escoger segun sea el caso que tegamos una o mas lineas*/
+    /*align-items: flex-start;*/
+    /*align-content: flex-start;*/
+    /*flex-wrap: wrap;*/
+}
+
+
+.flex-item {
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    height: 120px;
+    min-width: 150px;
+    text-align: center;
+    /*margin-left: auto;*/
+    /*margin: auto;*/
+    /*width: 100%;*/
+    /*flex: 1;*/
+    flex-grow: 1;
+    width: 300px;
+}
+
+.orange {
+    background-color: orange;
+    flex-shrink: 2;
+    order: 4;
+}
+
+.green {
+    background-color: green;
+    /*align-self: center;*/
+}

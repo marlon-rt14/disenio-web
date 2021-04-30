@@ -1,0 +1,126 @@
+FLEXBOX:
+
+Flexbox requiere de dos cosas: Un flex-container y un flex-item.
+
+El flex-container es el que va a mantener todos estos flex-item. Y funciona asi. Si a un contenedor le aplicacmos flexbox se va a comportar como un display-box: block. Pero donde vamos a notar los cambios con los items que esten adentro del contenedor.
+
+Es decir que tenemos que saber que el contenedor se va a comportar como un bloque pero el cambio se va a reflejar en los items, los elementos que esten adentro del contenedor. 
+
+Flexbox tiened dos ejes: el main-axis y cross-axis y tienen una direccion a la que apuntan. 
+
+El main-axis se va a ser el eje X del plano cartesiano y el cross-axis va a ser el eje Y. 
+
+_______________________________________________
+|                       | cros-start           |
+|                       |                      |
+|                       |                      |    
+|     main-start        |        main-end      |
+| ______________________|____________________->| main-axis
+|                       |                      |
+|                       |                      |
+|                       |                      |
+|                       | cros-end             |
+|______________________\/______________________|
+                    cros-axis
+
+Con CSS, lo que se hace es cambiar el flujo de sus direcciones.
+
+Con flexbox lo que hacesmos es invertir esto, cambiar las direcciones.
+Como hacemos esto?
+
+Los elementos vienen por defecto en el main-axix como horizontal. Y solo son flex-item los que son hijos directos del flexbox. Por ejemplo si tenemos un contenedor flexbox y adentro un <p>, <h1>, <img> y un segundo contenedor. Y el segundo contenedor tiene un <p>, <iframe>. Solo van a ser flex-items los que estan adentro del primer contenedor. 
+
+Al usar flex, los items ya se adaptarn al contenedor, y en base a su contenido se posicionan una a lado de la otra y la altura siempre es la misma. Hace una gran diferencia con el float. Logra en base al contenido mantener la altura. Y si para que se mantenga la altura la caja tiene que tener estas dimensiones, las mantiene. Si para no mantener la altura la caja tiene que tener otras dimensiones, no las manteiene. 
+
+Para cambiar sus propiedades se usa flex-grow. Cuando cambiamos la direccion ya se del main-axis, el cross-axis cambia automaticamente; obligatoriamente.
+
+PROPIEDADES QUE SE APLICAN EN EL CONTENEDOR PERO AFECTAN A LOS ITEMS: 
+
+{
+* Sirve para cambiar la direccion del main-axis. Valor por defecto: row; y los flex-item van comportarse como filas, es decir horizontal apuntando a la derecha
+flex-direction: (Recordar que si el eje X cambia, tambien el eje Y)
+                
+                row: apunta a la derecha
+                
+                row-reverse: hace un efecto espejo, apuntando a la             izquierda pero sigue en el mismo eje X.
+                
+                column: Convierte al eje X en eje Y apuntando hacia abajo
+                
+                column-reverse: Va de abajo para arriba.
+}
+
+{
+flex-wrap: 
+            no-wrap: Es el valor por defecto, no pasa nada
+            
+            wrap: Las cajas que sigan las tira abajo para respetar el ancho y alto de los items-flex
+            
+            wrap-reverse: En ves de tirarlas para abajo, las tira para arriba.
+}
+
+{
+* Se usa como una abrevacion entre flex-direction y flex-wrap
+flex-flow: flex-direction, flex-wrap
+}
+
+{
+* El margin: auto dentro de flex tambien funciona como un space-between en vertical.
+justify-conten: 
+                center: Centra el contenido, sin cambiar el margin
+                
+                space-around: Centra las cajas pero conservando el espacio del margin. NOTA: Es igual que el margin:auto en los items pero es mejor definirlo en el contenedor y luego ir cambiar el valor de los items segun sea necesario.
+                
+                space-between: Lo que hace es darle un margin automatico a todas las cajas pero manteniendo una en el lado izquierdo del viewport y otra en el lado derecho del viewport, es decir, si hay cuatro cajas numeradas; ajusta el margin solo de la caja 2 y 3. Quiere que todas las cajas esten separadas entre si lo mas que se pueda; separadas entre ellas, no del viewport.
+
+                space-evenly (main-axis): Hace que el margin de todas las cajas sea el mismo. No importa si hay cajas en medio. el espacio en en blanco entre las cajas que se va a ver va a ser el mismo.
+}
+
+
+ROPIEDADES PARA ALINEAR EN EL CROSS-AXIS
+
+{
+* Cuando hay una linea o fila en el flex-item
+align-items: 
+            flex-star: Pone los items al inicio, y tambien es lo mismo que baseline si el height de los flex-items no esta definido. 
+            
+            center: Centra los items en el eje Y, centra verticalmente
+            
+            flex-end: Pone los items al final
+            
+            stretch: Es la propiedad por defecto, no cambia nada. Si los flex-items no tienen un height definido, los items se vuelven del tamaño del contenedor.
+            
+            baseline (cross-axis): Si el height de los items-flex no tiene un height definido, las cajas se ajustan al tamaño de su contenido.
+}
+
+{
+* Cuando hay mas de una linea o fila en el flex-item. Pero las propiedades son casi las mismas que alig-items. Y se usan en distintos casos. 
+align-content: 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
