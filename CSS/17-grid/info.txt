@@ -1,0 +1,237 @@
+---------------------- CONCEPTOS BASICOS --------------------------------
+
+Grid es un container, un estilo de layout, una forma en la que vamos a trabajar con layout y es una valor de la propiedad display. Lo que hacemos con grid es trabajar en el layout a traves de grillas. 
+
+* grid-container: Es todo el grid, es el contenedor en pocas palabras. Es igual a flex-container, cuando aplicamos a un div display:grid, la cajita se comporta como bloque pero lo que cambia son los items en el interior del contenedor. 
+
+Ese contenido cuando aplicamos grid esta conformado por grillas, es decir parece una tabla pero hablando con propiedad es una grilla. 
+
+* grid-item: Cada uno de los elementos que forme parte del container es un item, es cada uno de lo elementos que ponemos, osea los contenedores. Ejemplo: 
+
+<div>
+<p>
+    <b></b> Este elemento ya no es un grid-item porque no es un hijo directo
+</p>
+<img>
+</div>
+
+Grid-item son los hijos directos de los grid-container. 
+
+* grid-cell: Un grid-cell es como un grid-item, pero no necesariamente. Por ejemplo aunque dibujemos una grilla de 2x2 podemos poner un solo item y sin embargo la grilla igual esta dibujada. La grilla la dibujamos de 2x2 y podemos un solo elemento. ¿Es posible? Si es posible. No confundir grid-item con grid-cell.
+
+Es la grilla teorica, aunque no es teorica es literal que se hace adentro del contenedor cuando le damos display: grid al asignar las columnas y las filas. 
+
+Ejemplo si hacemos un display:grid de 2x2, la grilla va a tener 4 celdas. Pueden ser celdas con forma de cuadrados o rectangulos, siempre, uno de los dos. 
+
+* grid-tracks (column && row): Tenemos dos tipos de grid-tracks.
+
+    # grid-column: Son las columnas (vertical)
+    # grid-row: Son las filas. (horizontal)
+
+Total de filas + total de columnas = grid-tracks. 5f + 3c = 8gt
+
+Hay que tener en cuanta que solo conceptualmente los vamos a llamar tracks, pero vamos a definirlos por rows y columns.
+
+* grid-area: Son areas que nosotros seleccionamos y su vez son consecutivas tanto vertical como horizontalmente; no puede haber en diagonal ni al traves, ni cruces, ni con forma de P. Las areas las definimos nosotros. Puede ser una area una celda? Si. Pero no tendira sentido. Para llamarse area tendria que ocupar mas de una celda. Tambien puede ser un area un grid-track. Como se dijo antes, las areas las definimos nosotros. 
+
+
+* grid line (column line && row line); Tenemos columns-lines y rows-lines. Y son las lineas con las que se forma una columna o fila. Por ejemplo una columna o una fila esta formada por dos lineas. Ejemplo, si tenemos una grilla de 3x4, seran 4 lineas para las filas y 5 lineas para las columnas: Contar,:
+
+1 _____2_____3_____4_____5
+ |     |     |     |     |
+ |     |     |     |     |
+2|_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |     |     |     |
+3|_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |     |     |     |
+4|_____|_____|_____|_____|
+
+
+
+El grid-implicito es el que sobra, es decir si declaramos 10 elementos dentro de un grid-container y definimos una grilla de 3 filas, el resto de los 7 elementos forman parte de la grilla pero de manera implicita.
+
+
+
+
+------------------------ PROPIEDADES -------------------------------
+
+En los parentisis es a quien se aplica la propiedad
+
+* Para definir las filas y columnas del grid, de la grilla
+grid-template-rows (grid-container)
+grid-template-columns (grid-container)
+
+{
+    * fr: Es lo mismo que decir flex-row y sirve para que las cajitas se repartan el espacio sobrante, 
+unidades "auto" y fr
+}
+
+{
+    * Es una forma de repetir columnas o filas, por ejemplo cuando queremos crean N columnas de M pixeles.
+    Alogoritmicamente lo que hace en el segundo paramentro es repetir, como copiar y pegar. Por ejemplo si ponemos:
+
+    repeat(3, 100px 100px)
+
+    El resultado va a ser 6 cajas de 100px de ancho, porque es como si copiara 3 veces dos cajas de 100px. Asi.
+    grid-template-column: {100px 100px} {100px 100px} {100px 100px}. Copió y pegó tres veces: 100px 100px
+
+repeat (cantidad, tamaño/s)
+}
+
+{
+    * Es una especie de margin pero entre celdas, la distanacia que va a haber entre una celda y otra hacia todos los bordes, mas no se separa del contenedor
+grid-row-gap (grid-container)
+grid-column-gap (grid-container)
+
+    * Esta es una forma abreviada
+grid-gap: row column (grid-container)
+}
+
+{
+    * Sirve para cambiar el tamaño de las celdas, por ejemplo quiero que la celda 1 empieze en la linea 1 y termine en la linea 3 para que tenga el doble de ancho que las demas celdas. 
+
+1 _____2_____3_____4_____5
+ |           |     |     |
+ |           |     |     |
+2|___________|_____|_____|
+ |     |     |     |     |
+ |     |     |     |     |
+3|_____|_____|_____|_____|
+ |     |     |     |     |
+ |     |     |     |     |
+4|_____|_____|_____|_____|
+
+grid-row-start (grid-item)
+grid-row-end (grid-item)
+grid-column-start (grid-item)
+grid-column-start (grid-item)
+
+    * Se pueden abreviar en estar dos opciones respectivamente
+grid-row (grid-item)
+grid-column (grid-item)
+
+    * Si no queremos andar contando, con el "span" decimos bueno arranca en la lina y contame 3 columnas por ejemplo.
+    grid-column: 1 / span 3;
+
+    O, ocupame tres columnas en otras palabras
+span
+}
+
+
+################# GRID IMPRLICITO Y GRID EXPLICITO #########################
+
+Grid implicito es cuadno se crean nuevos elementos que estan fuera de la grilla, es decir si tenemos una grilla de 3x5, tendremos 15 elementos, 15 celdas, pero del contenedor podemos tener 16 elementos, la celda sobrante no forma parte de la grilla pero sigue estando en el contenedor de la grilla, ese elemento pasa a formar parte del grid implicito.
+
+Por defectos estas celdas sobrantes se crean como fila, y no columna. Aunque hay la posiblidad de que se comporte como una columna. Pero por defecto es una fila
+
+NOTA: El repeat(x, m), con el grid-auto-rows no funciona porque no es para crear columnas sino para trabajar con las celdas por separado.
+
+3 nuevas propiedades del grid implicito: 
+{
+* Funciona exactamente igual que el grid-template-rows y grid-tremplate-column, sino que estas propiedades son para programar el grid implicito.
+
+    grid-auto-rows (igual que el template): Con esto no decimos cuantas filas vamos a crear, si no cuanto va a mideir la fila que vamos a crear, la fila que sobro.
+
+    grid-auto-columnas (igual que el template)
+}
+
+{
+* Sirve para decir que la fila que sobro se comporte como columna. Tambien comporta el orden en que se iran posisionando las cajitas.
+
+    grid-auto-flow: 
+                    row: Los elementos que sobran en la grilla forman una nueva fila y todas las celdas de la grilla se van ubicando de izquierda a derecha y asi ir formando la nueva fila.
+
+                    column: Los elementos que sobran en la grilla forman una nueva columna y todas las celdas de la grilla se van ubicando de arriba hacia abajo y asi ir formando la nueva columna.
+
+                    dense: Sirve para rellenar espacios en blanco, espacios huecos en la grila. Ademas tambien se comporta como row.
+}
+
+####################################### GRID DINAMICO ########################################
+
+Tiene filas, columnas auto ajustables y muchas otras prpiedades que son la cantidad de columnas, filas y el tamaño de estas y demás que cambien mutuamente. 
+
+{
+    # Estas propiedades solo estan disponibles con repeat(n, m)
+
+    # Cuando trabajamos con medidas fr en grid, es que cuando achicamos, las palabras te las va tirando para abajo, y no mas chico de lo que la palabra mas grande aguante. 
+
+    #Para que la celda se ajuste al contenido se usa min-conten y max-content 
+
+    {
+        * minmax() nos dice cual es lo minimo y maximo que va a medir 
+        minmax()
+    
+        * Hace que las celdas se ajusten al minimo contenido
+        min-content
+
+        * Hace que las celdas se ajusten al maximo contenido, sin tirar las palabras u otros elementos para abajo, que todo se comporte como bloque dentro de la celda. Generalmente no se lo usa mucho, pero existe esa posibilidad.
+    max-content
+    }
+
+cantidad: 
+
+    {
+        # Podemos hacer que se ajuste, o, que siga generando columnas y/o filas
+
+        * Que siga generando columnas o filas mientras cumpla ciertas prpiedades, hasta que se ocupar todos grid-items.
+            auto-fill
+
+        * Es escalar. LLega un punto en el que cuando no tiene mas elementos lo escala al grid-container. De esa manera no queda espacio vacio en el contenedor. 
+        auto-fit
+    }
+}
+
+##################################### ALINEACION Y CONTROL DE FLUJO #################################
+
+Diferencia con flex:
+
+# La alineacion es dentro de cada celda y no alineancion total del felx container .
+
+# Cada celda seria un flex-container
+
+# Las propiedades son las mismas que encontramos en el flex, el center, start, end, son las mismas, la diferencia es que se aplican a todas las celdas. 
+
+PROPIEDADES DEL GRID-CONTAINER
+
+justify-items (horizontalmente)
+align-items (verticalmente)
+
+* Este es el valor por defecto de la grilla
+stretch (default) start - center - end 
+
+place-items: align-items justify-content
+
+
+______________ Alineacion de filas y columnas __________________
+
+* Se puede apreciar mejor si el alguna de las celdas no son fr, y el grid-container es grande, el efecto que se ve es que la grilla entera se va posicionando en el contenedor. 
+
+* De esta manera lo que hacemos es trabajar directamente con las filas, con las colmnas y con los campos. 
+
+justify-content (horizontalmente)
+align-content (verticalmente)
+
+* Este es el valor defecto de la grilla 
+stretch(default) start - center - end 
+mas las de flex: 
+                space-arround
+                space-between
+                space-evenly
+
+
+NOTA: El transition en grid no funciona muy bien. Para ello se hace de otra forma.
+
+__________________ APLICADO AL GRID ITEM ___________________________
+
+align-self (horizontalmente)
+justify-self (verticalmente)
+place-self: align-self justify-self
+
+* Es el valor por default de cada celda
+stretch(default) start - center - end
+
+* El order funciona en la direccion en que apunta la grilla. enviando el elemento mas pesado al final.
+order (igual que en flex)
+
