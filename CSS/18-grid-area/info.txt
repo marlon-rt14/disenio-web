@@ -1,0 +1,31 @@
+
+Un area es un grupo consecutivo de celdas, ni siquiera hace falta que sean consecutivas, pueden estar en cualquier lado.
+
+Minimo tiene que tener dos celdas, osea tambien se puede de una pero seria ilogico, en ese caso seria mejor trabajar por celdas. 
+
+###################### NOMBRE DE LINEAS #########################
+
+# Tambien funciona para las areas 
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 
+            [f-line] 
+            150px
+            [s-line] 
+            150px
+            [t-line] 
+            150px;
+            [f-line]
+    grid-template-columns:
+            [linea-izquierda]
+            150px
+            150px
+            150px
+            [fin-del-main]
+}
+
+.grid-item:first-child {
+    grid-row: f-line / t-line;
+    grid-column: linea-izquierda / fin-del-main;
+}
