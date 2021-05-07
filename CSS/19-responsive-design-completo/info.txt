@@ -1,0 +1,39 @@
+
+RESPONSIVE DESIGN - COMPLETO
+
+Es una forma de trabajo para adaptar todo el contenido de nuestra pagina web a distintas resoluciones. 
+
+El responsive design trabaja con: 
+Estructuras flexibles (contenedores flexibles, imagenes y video flexibles)
+Media Queries
+
+@Media se usa en un consultas de medios para aplicar diferentes estilos para direrentes tipos / dispositivos de medios.
+
+    * ancho y alto de la ventana grafica
+    * ancho y alto del dispositivo 
+    * orientacion (¿la tableta / telefono esta en modo horizontal o vertical?)
+    * resolucion
+
+        all
+            apto para todos los dispositivos
+        print
+            destinado a material impreso y visualizacion de documentos en una pantalla en el modo de vista previa de impresion
+        screen
+            destinado principalmente a las pantallas
+        speech
+            destinado a sintetizadores de voz 
+    
+Operadores AND | OR 
+
+orientacion: landscape y portrait 
+
+MOBIL FIRST 
+Lo que hace es crear un web primero para mobile y luego ir haciendo que se adapte a resoluciones mayores. Por ejemplo primero hacemos que se adapte a un mobil y luego a una table y luego a un computadora de escritorio y luego una ultrawide. 
+
+Esta es la opcion mas recomendado cuando trabajemos con responsive design. 
+
+DESKTOP FIRST 
+Es hacer una web para escritorio y despues adaptarla a mas chiquitito y despues a mobile, es ir de grande a pequeño.
+
+CONTENT FIRST 
+No es responsive design como tal pero es una metodologia, lo que hace es; vamos a agarrar al contenido y lo que el contenido tenga vamos a estructurarlo, no importa si es primero mobile, primero tablet; primero nos preocupamos por el contenido y despues decidimos. Es una metodologia de contenido. Es tipo de marketing, que forma me va a vender mas, que me va a generar mas ventas, mas visitas y demas. Lo que importa es el contenido. En base al contenido lo armamos. 

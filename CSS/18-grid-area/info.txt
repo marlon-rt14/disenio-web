@@ -29,3 +29,15 @@ Minimo tiene que tener dos celdas, osea tambien se puede de una pero seria ilogi
     grid-row: f-line / t-line;
     grid-column: linea-izquierda / fin-del-main;
 }
+
+############################### SHORTHANDS ###################
+
+grid-template: row / column (grid-container)
+
+grid-template: area unidad 
+
+grid: 
+
+NOTA: No es recomendable usar estos shorthands porque son mas complidados de entender, ademas por temas de modularizacion es mejor separado, asi en caso de un error se lo puede ubicar facilmente.
+
+Es como si incluyamos codigo javascript en HTML. 

@@ -1,0 +1,37 @@
+* {
+    font-family: 'Gabriela', sans-serif;
+    font-size: 20px;
+}
+
+.div-responsive {
+    background: #c95;
+}
+
+/*SINTAXYS
+@media tipo operador (condicion)
+*/
+
+/*Lo que decimos aqui es que como minimo tenga esta resolucion para que se cumpla la condicion*/
+@media screen and (min-width: 400px) and (max-width: 650px){
+    .div-responsive {
+         background: red;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px){
+    .div-responsive {
+         background: green;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .div-responsive {
+         background: orange;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .div-responsive {
+         background: black;
+    }
+}
