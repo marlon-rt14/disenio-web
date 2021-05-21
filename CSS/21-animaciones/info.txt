@@ -1,0 +1,65 @@
+ANIMACIONES
+
+# Funcionan parecido a las  transiciones ya que requieren de una propiedad, de una regla mas que nada. 
+
+@KeyFrames <nombre de la propiedad o variable (es como si declarasemos un metodo)>
+# Con esta prpiedad es la forma que vamos a definir las animaciones 
+
+hay dos formas de decidir como se va a comportar una animacion.
+
+1: 
+    from {
+        #Son todas las propiedades que tiene la caja cuando comienza
+    }
+    to {
+
+    }
+
+2: Con porcentajes
+
+{
+    animation-mame: name
+}
+
+{
+    animation-duration: duration
+}
+
+{
+    animation-delay: delay
+}
+
+{
+    animation-timing-function: transition values
+}
+
+{
+    animation-iteration-count: number | inifinte
+
+    # Lo que nos permite es ver cuantas veces se va a repetir la animacion 
+}
+
+{
+    animation-fill-mode: none : valor por defecto
+
+                         forwards : Se queda con la propiedades que definimos en la ultima instancia, lo que declaramos en el 100% o en el to{}. Igualmente hay que tener en cuenta la direccion de la animacion y la cantidad que se repite. Por ejemplo si hacemos alternate y 2 veces, va aquedar como en un inicio, y si hacemos alternate 3 veces, va a quedar como el final. 
+
+                         backwards : el elementos obtendra los valores de estilo establecidos por el primer fotograma clave (depende de la direccion de la animacion) y lo conservara durante el periodo de retraso de la animacion
+
+                         both : Cuando arranca la animacion el elemento toma las propiedades del 0%, y hasta que no arranque tiene las prpiedades declaradas en el inicio. sin animacion, de forma estatica. Por ejemplo con el background.
+
+                         initial 
+                         inherit
+
+    # Lo que dfine es como va a quedarse, como va a ser el modo final 
+}
+
+{
+    animation-direction: normal | reverse | alterate | alterate-reverse
+
+    # Es la direccion en que se comporta el elemento. Por ejemplo si lo hicimos con porcentajes la direccion por defecto es: 
+    0% -> 50% -> 100%
+
+    Si le aplicamos animation-direccion: reverse es: 
+    100% <- 50% <- 0% 
+}

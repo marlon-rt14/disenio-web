@@ -1,0 +1,53 @@
+* {
+  font-family: "Sarala";
+  font-size: 20px;
+}
+
+
+div {
+  /*filter: blur(5px);  DESENFORAR */
+  /*filter: brightness(1); BRILLO */
+  /*filter: contrast(3); CONTRASTE */
+  /*filter: grayscale(1); BLANCO_y_NEGRO. El 1 eso como si no tuviera nada como parametro. Cualquier numero va a ser como si ponemos el 1. Si ponemos  0 no pasa nada. */
+  /*filter: hue-rotate(40deg); INVERTIR LA GAMA DE COLORES */
+  /*filter: invert(50%); INVERTE LOS COLORES ACTUALES */
+  /*filter: opacity(.5); OPACIDAD */
+  /*filter: saturate(400%); STATURAR */
+  /*filter: sepia(10); SEPIA */
+}
+
+img{ 
+  width: 100%;
+}
+
+/* PRIACTICA */
+
+.container {
+  outline: 2px solid green;
+  filter: contrast(20);
+  background: #fff;
+}
+
+.caja {
+  /*outline: 2px solid blue;*/
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin: 40px;
+  border-radius:50%;
+  filter: blur(10px);
+}
+
+.caja:first-child {
+  animation: trasladar 1.6s alternate infinite;
+}
+
+@keyframes trasladar {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(160px);
+  }
+}

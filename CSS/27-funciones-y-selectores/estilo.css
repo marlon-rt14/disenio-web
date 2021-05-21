@@ -1,0 +1,22 @@
+* {
+  font-family: "Sarala";
+  font-size: 30px;
+  scroll-behavior: smooth;
+}
+
+body{
+
+}
+
+.container {
+  padding: 20px;
+  background: #59f;
+  direction: rtl;
+  letter-spacing: 2px;
+
+}
+
+#content {
+  background: #f00;
+  user-select: none;
+}

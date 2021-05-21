@@ -1,0 +1,33 @@
+TRANSITION
+Es una propiedad que lo que nos permite es realizar transiciones, dentro de los elementos. 
+
+Las transiciones es como ir mostrando todos los frames de diferencia entre un estado y otro estado, es ir mostrando el progreso de un cambio.
+
+Para que transicion se ejecute, es necesario disparar un evento (hover, onclick, etc.)
+
+{
+    * Estas dos propiedades siempre tienen que ir juntas, obligatoriamente para ver los cambios en la transicion.
+    {
+        transition-property: property/ies - all -none
+
+        * Cuando usamos all, a todas las propiedades les va a aplicar la transicion, esto no es recomendable porque consume muchos recursos. Es mejor hacer por la propiedad que deseamos, hay estadisticas que demuestran que si las paginas no cargan en los primeros 4 segundos el 75% de los usuarios la abandonan, asi hay que ser conciente que es fundamental el uso de recursos en un sitio web.
+    }
+    {
+        transition-duration: duration/s
+
+        * Es la duracion que queremos que dure la transicion
+    }
+}
+{
+    transition-delay: delay/s
+
+    * Se usa para mostrar los cambios despues, no al mismo tiempo que se situa el cursor sobre la caja, como sucede con hover. Lo hace despues. Como un efecto retardado. Lo mismo aplica para retornar a los cambios origianles.
+}
+
+{
+    transition-timing-function: 
+        linear, ease, ease-in, ease-out,ease-in-out, step-start, step-end, steps(int, start | end), initial, inherit
+
+    * Nos dice la curva del tiempo que va a tardarse en realizar la animaicon. Osea, es la transicion en funcion del tiempo. Como va a ir la velocidad, la aceleracion, la des-aceleracion del cambio de la transicion en funcion del tiempo. Aqui trabaja la matematica, se hace con curvas de bezier. 
+}
+transition: 

@@ -1,0 +1,40 @@
+TRANSOFORM
+
+Transform es una propiedad que nos permite transformar el objeto, transformalo de varias formas.
+
+Las transformaciones reciben funciones. 
+
+Tiene varias formas de transformar un elemento, una caja
+
+1.- Lo transforma de un lado para el otro, arriba - abajo, adentro - al fondo; lo transforma, lo desliza o lo desplaza 
+
+Tenemos una ayuda que se llama clip-path.
+Podemos buscar es en google, y es para generar formas. De esa manera podemos cambiar la forma del elemento de la caja. 
+
+HAY MUCHAS PRPIEDADES ENTRE ELLAS: 
+
+{
+    transform: translateX | translateY | translate (s - x, y) 
+
+    # Si usamos porcentajes, son porcentajes relativos al elemento) - recomendado para animar
+}
+
+{
+    transform: scale(xy - x,y) | scaleX(x) | scaleY(y)
+}
+
+{
+    transform: rotate(angleUnit) | rotateX(angleUnit) | rotateZ(angleUnit) | rotate3D(angleUnit) 
+
+    #angleUnit = deg(grados) | grad(gradianes) | rad(radianes) | turn
+}
+
+{
+    transform: skew(angleUnit)
+}
+
+#para ver todas las propiedades en en la pagia W3schools hay documentacion
+
+AHORA VEMOS QUE ES MEJOR UTILIZAR translate() PARA MOVER ELEMENTOS Y YA NO CON LOS TIPICOS DE LEFT, RIGHT, TOP, BOTTOM PORQUE LO QUE HACEN ESTAS PROPIEDADES ES ROMPER EL LAYOUT Y HACEMOS QUE TODO EL LAYOUT SE AJUSTE AL NUEVO CAMBIO. ENTONCES LO QUE HACE EL NAVEGADOR ES BORRAR EL LAYOUT Y VOLVER A DIBUJAR UNO NUEVO. CON translate() CREA UNA NUEVA CAPA, SEPARA EL ELEMENTO, LO PONE EN ESA NUEVA CAPA, LO BORRA Y DIBUJA ESE NUEVO ELEMENTO. HACE QUE LA ANIMACION SE REALICE EN UNA CAPA SUPERIOR. DE ESA MANERA NO MOVEMOS EL LAYOUT, NO USAMOS TANTOS RECURSOS Y ES MAS OPTIMO. 
+
+RECORDAR QUE EL TIEMPO DE CARGA DE UNA PAGINA DEPENDE DE LOS RECURSOS QUE UTLICEMOS, Y ES IMPORTANTE AHORRAR RECURSOS

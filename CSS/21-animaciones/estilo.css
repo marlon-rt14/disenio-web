@@ -1,0 +1,48 @@
+* {
+  font-family: "Sarala";
+  font-size: 20px;
+}
+
+.container {
+  padding: 20px 5px;
+  background: #86f;
+}
+
+.caja {
+  background: #025;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  animation-name: desplazarse;
+  animation-duration: 1s;
+  position: relative;
+  /*animation-timing-function: ease;*/
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes desplazarse {
+  /*from {
+    position: relative;
+    left: 0;
+  }
+
+  to {
+    left: 80%;
+  }*/
+
+  0% {
+    left: 0;
+    background: #025;
+  }
+
+  50% {
+    background: red;
+  }
+
+  100% {
+    left: 80%;
+    background: green;
+  }
+}

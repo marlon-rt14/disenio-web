@@ -1,0 +1,12 @@
+CUBIC BEZIER
+
+Es una propiedad para trabajar con transiciones y animaciones entre otras cosas. y es un valor del animation-timing-function y transition-timing-function. 
+
+Lo valores para la animacion es un curva, y se lo puede ver en el navegador mediante inspeccionar. 
+
+Podemos cambiar las velocidades de animacion con las curvas de bezier 
+
+Una forma de calcular la curva es mediante la funcion inspeccionar del naveador, ayudarnos de la curva grafica y como los datos se ven en tiempo real, basta con que cambiemos la curva hasta estar conformes, depues solo copiamos y pegamos. 
+
+O tambien podemos buscar en el buscador un generador de curvas de bezier. 
+

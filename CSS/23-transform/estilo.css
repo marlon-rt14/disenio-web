@@ -1,0 +1,41 @@
+* {
+  font-family: "Sarala";
+  font-size: 20px;
+}
+
+.container {
+  padding: 20px 5px;
+  background: #86f;
+}
+
+.caja {
+  background: #025;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  display: flex;
+  color: #fff;
+  /*TRANSORMAR TRASLADANDO*/
+  /*transform: translate(100%, 100%);*/ /*Se puede hacerlo con numeros positivos y negativos; tanto para el eje X y el eje Y. Si ponemos 100% es lo mismo que decir 80px, porque es con el ancho total de la caja. El shorthand es: translate(Y, X)*/
+
+  /* TRANSFORMAR ESCALANDO, que se haga mas grande o mas chico*/
+  /*transform: scaleY(0.5);*/ /*1 es el valor por defecto, 2 es el doble de grande y asi sucesivamente. De igual manera tenemos en el eje X y el eje Y; y su shorthand. */
+
+  /*transform: skew(30deg);*/
+
+  /*clip-path: polygon(50% 0%, 0% 100%, 100% 100%);*/
+
+  transition: transform 1s;
+}
+
+.caja:hover {
+  /*transform: scaleX(2) translate(40px);*/ /* Tambien podemos hacer combinaciones*/
+  /*transform: skew(-20deg);*/ /*Es deformar la figura*/
+  transition: transform 1s;
+}
+
+b {
+  margin: auto;
+  /*transform: skew(-30deg);*/
+  /*clip-path: polygon(50% 0%, 0% 100%, 100% 100%);*/
+}

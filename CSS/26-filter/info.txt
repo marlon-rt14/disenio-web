@@ -1,0 +1,25 @@
+FILTER
+
+none
+
+blur(px)
+
+brightness(0 - 1)
+
+contrast (number or %)
+
+drop-shadow(medidas): Nos sirve para dar un efecto de sombra a las imagenes transparentes, en formato .png
+
+grayscale(% | 0 - 1)
+
+hue-rotate (deg): Es como una forma en que invertimos los colores. 
+
+invert(%): Invierte los colores actuales de la imagen. el 50% equivale a un gris.
+
+opacity (% | 0 - 1)
+
+saturate (%)
+
+sepia(%)
+
+url("filters.svg#filter-id");

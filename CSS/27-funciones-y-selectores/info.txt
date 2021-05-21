@@ -1,0 +1,25 @@
+OTRAS PROPIEDADES, FUNCIONES Y SELECTORES DE CSS
+
+{
+    direction: ltr | rtl | initial | inherit
+}
+
+{
+    letter spacing
+}
+
+{
+    scroll-behavior
+}
+
+{
+    user-selected
+}
+
+{
+    text-shadow
+}
+
+------------------ atr() -------------------
+
+SELECTORES: https://www.w3schools.com/cssref/css_selectors.asp

@@ -1,0 +1,58 @@
+BACKGROUND
+
+{
+    background-color:
+
+    # Es darle un color
+}
+
+{
+    background-image: url()
+
+    # Para cargar una imagen
+}
+
+{
+    background-size: n%, cover, contain
+
+    # Para ajustar el tamaño de la imagen 
+    # Se pude usar el shorthand: background-size: widht% height%
+}
+
+{
+    background-repeat: 
+                        repeat: Es la propiedad por defecto
+                        
+                        no-repeat: Cuando no queremos que se repita
+
+    # Esto lo podemos usar cuando el contenedor es mas grande ya sea en ancho o en alto que la imagen original. Lo que pasa es que se genera como un efecto mosaico para llenar el contenedor, pero con esta opcion evitamos ese efecto, evitamos que se repita.
+}
+
+{
+    background-clip: border-box | padding-box | content-box
+
+    # Lo usamos para decir desde donde queremos que se ajuste la imagen, si queremos que empieze desde el borde; que es el valor por defecto, desde el padding o content
+}
+
+{
+    background-origin:
+
+    # Es lo mismo que background-clip pero ahora la imagen no se va a recortar, se va a originar a partir de lo que queremos mostrar nosotros. 
+}
+
+
+{
+    background-position: left - top - bottom - right - center ++ left - top - bottom - right - center
+
+    # Tenemos que usar dos de esas propiedades, lef center, por ejemplo. No podemos agarrar y poner left con right porque seria ilogico. Como si quisieramos poner en las esquinas, top left, top right, left bottom, right bottom, right center y asi.
+}
+
+{
+    background-attachment: 
+                            scroll: Es como si la imagen fuera parte del contenedor, como si fuera normal 
+
+                            fixed: Es como si la imgen o el fondo fuera parte del viewport. la imagen se queda fija mientras los contenedores de desplazan. Genera un efecto increible.
+                            
+                            inherit
+}
+

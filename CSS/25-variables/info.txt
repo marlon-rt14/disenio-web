@@ -1,0 +1,10 @@
+VARIABLES
+
+Una variables es un espacio que almacenamos en la memoria 
+Tenemos variables locales y variables globales.
+
+# Las globales son las que se puedes usar desde cualquier elemento 
+
+:root {
+    --nombre-de-variable: valor;
+}

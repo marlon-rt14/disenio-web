@@ -1,0 +1,25 @@
+* {
+  font-family: "Sarala";
+  font-size: 20px;
+}
+
+.container {
+  padding: 30px;
+  background: #398;
+  width: 350px;
+  height: 200px;
+  margin: 40px;
+  background-image: url("https://webgenio.com/wp-content/uploads/2011/12/leon-hd-wallpapers.jpg");
+  /*background-size: 100% 100%*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-clip: content-box;*/
+  /*background-origin: content-box;*/
+
+ /* background-size: 100px;
+  background-position: left top;*/
+
+  background-attachment: scroll;
+  border: 20px solid transparent;
+}
+
