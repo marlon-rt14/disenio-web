@@ -18,11 +18,16 @@ FUNCIONAMIENTO DEl MARGIN
 
 {
 * Nos pemite elegir que caja va a dar mas espacio cuando no alcance el lugar disponible.
+
+En resumen es a la veolcidad en que se encoje la caja. Por defecto es 1. Si le asignamos "0", la caja no se encojeria.
     flexh-shrink: Espacio que "cede" (main-axis)
 }
 
 {
 * Es lo mismo que el width. Pero, tiene mas importancia, asi que no importa si lo escribimos en una linea mas arriba o mas abajo. El valor que a tomar es que le asigenemos con el flex-basis.
+
+Un ejemplo es cuando el with de la caja contenedora es menor que el flex-item. Cuando se usa el margin apareceria una barra de desplazamiento horizontal para ver todo el width del flex-item. Pero con flex-basis, la caja se ajusta; El flex-item va a ajustar el width hasta que la caja contenedora tenga el ancho suficiente para que alcance el width del flex-item
+
     flex-basis: Medicion antes de encogerse (en auto (defect value)), agarra el width, y si no tiene mas prioridad)(main axis)
 }
 
