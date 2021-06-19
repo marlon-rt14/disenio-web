@@ -1,0 +1,24 @@
+Que es Javascript?
+
+- Lenguaje de programacion
+- Interpretado
+- Orientado a objetos
+- Imperativo
+- Case sensitive (upper and lower case)
+- Basado en prototipos / instancias / classless
+- Tipado debil
+- Lenguaje dinamico
+
+- ECMASCRIPT (5.1 Y 6, 7, 8, next)
+
+Para que sirve?
+- Dinamismo de los sitios web
+- Servidor en NodeJS
+- Tecnologias Frontend como Angular, React o Vuew.js 
+
+    # Otros usos no tan comunes
+    - Inteligencia artificial
+    - Placas electronicas (Jhonny Five)
+    - Mobile Apps
+    - Desktop Apps
+    - Etc 
