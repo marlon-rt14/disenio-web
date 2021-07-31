@@ -1,0 +1,90 @@
+Clases, classList y Metodos de classList
+
+- Definicion y usos
+	# classList es una particularidad de las clases de los objetos y podemos hacer un monton de cosas con las clases de los objetos 
+
+- add()
+	añade una clase
+
+- remove()
+	remueve una clase
+
+- item()
+	devuelve la clase del indice especificado, como si todas clases de la etiqueta fuera un array, entonces nos devuelve el valor del indice.
+
+- contains()
+	verifica si ese elemento posee o no, la clase especificada
+
+- replace()
+	reemplaza una clase por otra, si es que la clase existe devuelve true y la reemplaza, sino, devuelve false y no hace nada
+
+- toggle()
+	# si no tiene la clase especificada, la agrega, si ya la tiene, la elimina. 
+
+	# Nos devuelve un valor, por ejemplo si no solo le mandamos un parametro, pregunta, si no la tiene la agrega y devuelve true, si la tiene la quita y devuelve false.
+
+	# en el segundo parametro con true decimos que si la tiene igual la va a dejar, y si le damos false la va a sacar siempre, es para hacer un forzado.
+
+	# el segundo parametro no lo soporta internet explorer, opera 12 y versiones anteriores
+
+____________________________________________________________________________________---
+__________________________________________________________________________________
+
+Obtencion y Modificacion de elementos
+
+- textContent()
+	devuelve el texto de cualquier nodo
+
+	# nos devuelve el texto que podemos ver sin incluir el html, incluso si el texto esta oculto (visibility: hidden)
+
+	# nos devuelve el texto sin la necesidad de recurrir al estilo que el desarrollador quiere mostrarnos, esta propiedad no muestra todo el texto que esta adentro, pero sin mostrar las etiquetas internas
+
+- innerText()
+	# devuelve el texto visible de un node element
+
+	# tampoco ya no se usa porque se creó para una funcionalidad de internet explorer, pero internet explorer ya esta muerto, por eso no es recomendable y consume mas recursos, y no es estandar
+
+- outerText()
+	devuelve el texto que se encuentra en las etiquetas html
+
+	# YA NO SE USA MAS!
+
+###############
+
+- innerHTML
+	devuelve el contenido html de un elemento si es que esta visible.
+
+	# se lo puede ver mejor en un alert(), ya que el navegador lo interpreta.
+
+	# en este caso si ponemos espacios en blanco o lineas vacias en nuestra hoja .html, el valor devuelto va a ser excatamente igual como le tenemos en nuestro archivo .html que estamos programando 
+
+- outerHTML
+	# devuelve el codigo HTML completo de un elemento, incluido la etiqueta, el nodo contenedor
+
+
+
+________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

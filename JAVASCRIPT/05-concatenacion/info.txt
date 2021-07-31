@@ -1,0 +1,46 @@
+CONCATENACION 
+
+- Definicion y ejemplo
+	# La concatencacion es basicamente unir strings, unir dos cadenas de texto 
+
+	saludo = "Hola pedro!";
+	pregunta = "¿Como estas?";
+	frase = saludo + pregunta;
+
+- Con el signo +
+
+- Para numeros formamos string ("" + 9 + 4);
+	# para concatenar numeros lo hacemos forzando un string, un espacio vacio. Y lo que quiere decir es cuando se detecta un string, convierte todo automaticamente a un string. Es lo que se habla del tipado dinamico. 
+
+- Con Concat
+	# funcion Concat, 
+	# Para usar el concat, si o si tenemos que tener al menos 1 string para concatenar 
+
+	frase = saludo.concat(pregunta);
+
+- Con backtiks(``) y la variable entre ${}
+	# Otra forma muy recomendable. 
+	# Es posible hacerlo en varias lineas
+	# Incluso es posible escribir codigo html dentro de los backticks
+
+
+BACKTICKS (Bloquote o Acento grave) y Escape
+
+- Sin backticks: " linea 1\n\
+			linea 2"
+
+- Con backticks: ```` linea 1 
+			linea 2`
+
+- Definicion
+
+- Escape de commilas simples
+	# Si queremos poner comillas simples en una cadena, por fuera van commilas dobles y por dentro van comillas simples
+
+- Escape de commilas dobles
+	# Si queremos poner una cadena en comillas, por fuera van comillas simples y por dentro comillas dobles
+
+
+	# Y lo mismo aplica para los backticks
+
+

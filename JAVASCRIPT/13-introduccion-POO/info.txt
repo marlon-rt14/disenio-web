@@ -1,0 +1,74 @@
+POO
+
+- Definicion y usos
+Es un paradigma de la programacion que lo que hace es intentar actualizar la forma en que programamos, mejorandola y haciendo que podamos porgramar objetos como en la vida real.
+
+La POO es uno de los tantos paradigmas de la programacion, tenemos la programacion defensiva, la programacion funcional, la programacion secuencial, etc. Es uno de los tantos paradigmas que tenemos para crear soluciones que es lo que hacemos con la programacion, creamos soluciones a problemas que se nos presentan.   
+
+- Ejemplos
+- Nos sirve para programar objetos de la vida real. 
+
+
+CONCEPTOS BASICOS DE POO
+
+- Clases
+Una clase es como una receta, es como una plantilla que creamos para que con esa plantilla podamos crear objetos, es como crear una fabrica de objetos que le decimos que pueda hacer estas cosas, que tenga estas cualidades y lo crea. Si queremos que la fabrica haga otra cosa; creamos otra clase. 
+
+- Objeto
+Las clases lo que hacen es crear objetos, y los objetos son los resultados de estas clases.
+
+- Atributo
+Los atributos son las particularidades, las prpiedades, las caracteristicas que tiene nuestro objeto. 
+
+- Metodo
+Son las cosas que puede hacer nuestro objeto. Son las acciones que vamos a hacer. Los metodos se crean dentro de la clase. En Javascript si creamos una funcion dentro de una clase se le dice metod y si la creamos afuera se le dice funcion, pero es practicamente lo mismo. Cuando decimos metodo estamos haciendo referencia a un objeto.
+
+Las funciones flecha no pueden ser usadas para crear metodos en las clases. Ademas palabaras com this, const, let, no estan permitidas puesto que se asume que es un objeto. 
+
+- Constructor
+Es una particularidad que tienen las clases, es una funcion obligatoria. Cuando creamos una clase; tenemos que crear un constructor que nos va a construir las propiedades del objeto.
+
+- Instanciacion
+Cuando finalizamos todo lo anterior se puede decir que la clase esta instanciada, esta siendo un objeto. O tambien, cuando creamos otros objetos a partir de un objeto existente. 
+
+CARTACTERISTICAS DE LA POO
+
+# Cunado loogramos valancear estos 4 podemos tener un sistema basado en POO ideal, porque tenemos todos estos conceptos equilibrados y llevados a codigo 
+
+- Abstraccion
+Sunpongamos que tenemos un auto. Fin. Tenemos la idea de un auto y sin embargo me estoy omitiendo un monton de cosas como el color, la marca, las puertas, el tipo de vidrio... etc. En programacion cuando hablamos de abstraccion es intentar reducir lo mas que se pueda un objeto, lo menos complejo que podamos, reducimos todos sus componentes basicos. Reducimos un objeto como con las caracteristicas principales, tomando el caso del perro seria raza, color, edad, ladrar, caminar; pero no color de ojos, nariz, patas, etc 
+
+	# Hacer que todo se reduzca a sus caracteristicas principales.
+
+- Modularidad
+Es la capacidad de resulver un problema grande separandolo por partes, tiene que ver con la modularizacion tambien. Por ejemplo si tenemos un trabajo de 100 horas sera mas facil resolverlo por pedacitos que todo junto. Y asi evitaremos el caos cuando estemos terminando el proyecto, que por qui me equivoque me toca regresar, este metodo ya no vale, etc. 
+
+	# Es separar el problema por partes 
+
+- Encapsulameinto
+Consiste en hacer que todos los datos, toda la data esten privados, osea que el usario no pueda acceder tan facil, que no podamos acceder a esos datos de manera mas facil. es encapsular los datos para que la informacion no salga de ahi y no se pueda acceder de manera tan sencilla 
+
+	# Es intentar encapsular los datos para que no se tenga acceso de otros lugares 
+
+- Polimorfismo
+Consiste en ver como un objeto se comporta de manera distinta ante el mismo metodo. Por ejemplo si yo tengo un animal y le digo camina. Un perro va a caminar de una forma, un gato va a caminar de una forma, una vaca va a caminar de otra forma. Eso es el Polimorfismo, es la capacidad que tiene un objeto para comportarse distinto por sus propiedades. Porque un perro camina distinto por las propiedades que tiene, al igual que el gato al igual que la vaca 
+
+	# Es como los objetos se comportan distinto con el mismo metodo solamente porque sus propiedades son distintas 
+
+
+OTROS CONCEPTOS DE POO
+
+# Ya vendria a tener cambios visuales en el codigo 
+
+- Herencia
+Es hacer una clase que va a tomar todo lo que puede hacer la otra clase y las propiedades de la clase, per ademas agregarle cositas nuevas
+
+- Metodos estaticos
+Es un metodo que no necesita que la clase se defina para poder ser utilizado. Es decir podemos llamar al metodo sin necesidad de instanciar la clase. 
+
+- Metodos accesores (getters, setters)
+Los getter son para obtener un valor
+
+los setter son para modificarlo o definirlo 
+
+Raramente los getter y los setter funcionan como metodos, genralmente las palabras como get y set convierte a los metodos en propiedades

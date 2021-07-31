@@ -1,0 +1,65 @@
+METODOS DE ARRAYS
+
+______________ Transformadores ______________
+# Modifican al array original, los que no son transformadores nos devuelven un nuevo array o hacen algo pero al array original lo dejan intacto.
+
+- pop()
+	elimina el ultimo elemento de un array y lo devuelve
+
+- shift()
+	elimina el primer elemento del array y lo devuelve
+
+- push()
+	agrega un elemento al array al final de la lista y nos devuelve el nuevo tamaño del array, o, la posicion del nuevo elemento que agregamos. Ambas son validas.
+
+- reverse();
+	invierte el orden de los elementos de un array
+
+- unshift()
+	agrega uno o mas elementos al inicio del array, y devuelve la nueva longitud del array
+
+- sort()
+	ordena los elementos d un arreglo localmente y devuelve el arreglo ordenado
+
+- splice()
+	cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos especificando la posicion donde empieza
+
+
+______________ Asesores ______________
+# Nos devuelve una cadena de texto
+
+- join()
+	# une todos los elementos de una matriz (u objeto similar) en una cadena y a la devuelve
+	# Tiene una diferencia con el tostring(), y es que le podemos pasar como parametro el separador que queramos
+
+- slice()
+	devuelve una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no incluido)
+
+- Metodos ya vistos en cadenas: tostring(), indexOf(), lastIndexOf() , inlcudes()
+
+
+______________ De repeticion ______________
+- filter()
+	# crea un nuevo array con todos los elementos que cumplan la condicion
+	# recibe como parametro una funion
+	# La diferencia con forEach() es que podemos establecer condiciones
+
+- forEach()
+	# ejecuta la funcion indicada una vez por cada elemento del array
+	# Es casi igual que filter()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

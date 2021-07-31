@@ -1,0 +1,61 @@
+METODOS DE CADENA
+
+- concat()
+	Junta dos o mas cadenas y retorna una nueva
+
+- startsWith()
+	Si una cadena comienza con los caracteres de otra cadena, devuelve true, sino devuelve false
+
+- endsWith()
+	Si una cadena termina con los caracteres de otra cadena, devuelve true, sino devuelve false
+
+- includes()
+	Si una cadena puede encontrarse dentro de otra cadena, devuelve true, sino devuelve false
+
+- indexOf()
+	devuelve el indice del primer caracter de la cadena, si no existe devuelve -1
+
+- lastIndexOf()
+	devuelve el ultimo indice del primer caracter de la cadena, si no existe devuelve -1
+
+#########################################################################
+
+- padStart() [propuesta de estandar]
+	Rellenar cadena al principio con los caracteres deseados
+
+- padEnd() [propuesta de ECMA]
+	rellenar cadena al final con los caracteres deseados
+
+- repeat()
+	
+
+#########################################################################
+
+- split()
+	divide la cadena como le pidamos y nos retorna un array
+
+- substring()
+	# nos retorna un pedazo de la cadena que seleccionamos
+	# adminte dos parametros, el primero indica la posicion donde empiza y el otro indica la posicion donde termina
+	# nos retorna una cadena que empieza con la posicion que le pasamos como parametro pero uno menos que la posicion donde termina, el valor de la posicicon final que le decimos no nos muestra, es uno menos.
+
+- toLowerCase()
+	convierte una cadena a minuscula
+
+- toUpperCase()
+	convierte una cadena a mayuscula
+
+- toString()
+	# este metodo devuelve una cadena que representa el objeto especifico
+
+- trim()
+	elimina los espacios en blanco al principio y al final de una cadena
+
+- trimEnd()
+	elimina los espacios en blanco al final de una cadena
+
+- trimStart()
+	elimina los espacios en blanco al comienzo de una cadena
+
+- valueOf()
+	retorna el valor primitivo de un objeto string

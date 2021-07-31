@@ -1,0 +1,39 @@
+---------------- METODOS DE CHILDS (Hijos)
+
+- replaceChild()
+	# reemplazamos un elemento hijo por otro
+	# admite dos parametros, el primero sera el nuevo, y el segundo parametro sera el antiguo
+
+- removeChild()
+	# remueve el hijo que no queremos
+
+- hasChildNodes()
+	# para verificar si tine hijos o no, si el nodo contenedor tiene aunque se solo texto, el texto si cuenta como hijos porque son nodos de tipo texto. Tiene que estar totalmetne vacio que no tenga nada, que sea solo un elemento nuevo para que nos diga que no tiene hijos
+
+----------------- PROPIEDADES DE PARENTS (Padres)
+# hay muchas pero estas son las mas comunes
+# Estas dos propiedades son casi lo mismo, a menos que sea algo realmente especifico para notar la diferencia
+
+- parentElement
+	# selecciona el padre elemento de un elemento
+	# siempre busca una etiqueta html padre
+
+- parentNode
+	# selecciona el nodo padre
+	# siempre busca un nodo padre que no necesariamente es una etiqueta html
+
+---------------- PROPIEDADES DE SIBLINGS (Hermanos)
+# los hermanos son los que etan en la misma linea, todos los elementos dentro de un nodo son hermanos, los hijos directos del contenedor son hermanos
+
+- nextSibling
+
+- previousSibling
+
+- nextElementSibling
+
+- previousElementSibling
+
+---------------- NODOS - Extras
+
+- closest()
+	# es seleccionar el elemento ascendente padre mas cercano que coindica con nuestro selector, se trabaja con selectores

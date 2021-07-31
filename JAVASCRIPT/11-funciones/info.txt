@@ -1,0 +1,62 @@
+FUNCIONES
+
+- Definicion y usos
+	# Una funcion es una porcion de codigo, la cual podemos volver a ejecutar cada vez que lo llamemos con el nombre que lo asociamos.
+
+	# Agarramos una porcion de codigo de nuestro programa para que podamos reutilizarla de vuelta 
+
+	# Nos permite ahorrar codigo y resumirlo en una palabra, como si declarasemos una variable
+
+- Formas de crear funciones y llamarlas;
+	function saludar(){
+		//Ejecuta esta porcion de codigo 
+	}
+
+	saludar(); // llamamos a la funcion
+
+	//otra forma un poco rancia, declaramos una variable el cual su valor va a ser una funcion.
+	const saludar = function(nombre){
+		let frase(`hola ${nombre} como estas?`);
+		alert(frase);
+	}
+	saludar("marlon");
+
+- return
+	# Nos devulve un valor que es un tipo de dato. 
+
+	# una vez ejecutado el return, la funcion termina, es como un break pero para las funciones;
+	function saludar(){
+		alert("hola");
+		return "es un saludo";
+	}
+
+	let saludo = saludar(); // llamamos a la funcion y nos devuelve lo que tiene return
+
+	alert(saludo); // nos devulve "es un saludo";
+
+
+- Parametros
+	# los parametros son igual como si declarasemos variables, pero lo hacemos en los parentisis de una funcion, y esas variables solo las puede utilizar la funcion; 
+
+	function suma(num1, num2){
+		let res = num1 + num2;
+		return res;
+		//return num1 + num2;
+	}
+
+document.write(suma(32,12));
+
+- Scope
+	# Es el alcance que tiene una variable o una funcion, puede ser global o regionl.
+
+- Funciones flecha
+	# la palabra function se convierte en una flecha y se pone despues
+	# Si solo estamos recibiendo un parametro no hace falta poner parentisis
+	# Si no hay ningun parametro solo ponemos parentisis
+	# Si solo hay una linea de codigo que se ejecuta en la funcion, podemos omitir las llaves 
+	
+	const saludar = (nombre) => {
+		let frase(`hola ${nombre} como estas?`);
+		alert(frase);
+	}
+

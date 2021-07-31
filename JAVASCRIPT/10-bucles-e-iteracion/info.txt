@@ -1,0 +1,63 @@
+BUCLES E ITERACION
+
+- Definicion y usos
+
+- Sentencia while
+	# Son casi lo mismo con el if, con la diferencia que se la pasan preguntando todo el tiempo. Por eso es un bucle, porque se repite constantemente. Y hasta que la condicion no sea falsa, no va a seguir el flujo de programa.
+
+- Sentencia do while
+	# Primero hago lo que quiero que haga y despues pregunta la condicion. Primero se ejecuta y despues se pregunta 
+
+- Sentencia for
+	# Es exactamente igual que while, con la diferencia de que es un bucle determinado, lo que significa que en su sintaxis nosotros ya le indicamos cuantas vueltas van a dar. en while y do while, no le decimos cuantas vueltas van a dar; por eso son bucles indeterminados. Algunas personas los llaman determinados e indeterminados, finitos e infinitos; es igual. El punto es que en unos bucles le especificamos cuantas vueltas van a dar y en otros no.
+
+	El for se compone de tres partes:
+		* declaracion e inicializacion de variables
+		* condicion
+		* iterar (es repetir lo mismo varias veces)
+
+			for (let index = 0; index < array.length; index++) {
+				const element = array[index];
+			}
+
+- Sentencia for in
+	# for in y for of, nos ahorra codigo del for clasico, porque le estamos diciendo que la variable ya la creamos nosotros 
+
+	# En la variable que definimos estamos dicendo que dicha variable va a ser igual a cada unos de los elementos de una lista. 
+
+	let animales = ["perro", "gato", "tiranosaurio"];
+
+	for(animal in animales){
+		document.write(animal + " ");
+	}
+
+	# In, nos devuelve la posicion de cada elemento de la lista
+
+	# Un dato curioso es cuando se trabaja con propiedades a los objetos. esta funcion in, nos devuelve el nombre de la propiedad
+
+	# Las propiedades si forman parte la iteracion del for in
+
+- Sentencia for of 
+	# Of, nos devuelve el valor de cada posicion de la lista
+
+	# Cuando trabajamos con prpiedades y accedemos a alguna de ellas, nos devuelve el valor la propiedad, a diferencia con el in, que nos devuelve solo su nombre. 
+
+	# Ademas, las propiedades no forman parte de la iteracion del for of
+
+-------------------------------------
+
+- Sentencia break
+	# Termina un bucle, es un escape
+
+	# Si existen for anidados, el break solo finaliza el bucle al cual pertenece
+
+- Sentencia label
+	# Es una sentencia que nos permite asociar culquier bucle, excepto el foreach, a un nombre para poderlo teminar cuando querramos.
+
+	# Es util cuando tenemos varios bucles anidados y en el ultimo bucle queremos que terminen todos los bucles. 
+
+- Sentencia continue
+	# Nos sirve para saltarnos una vuelta en el bloque de codigo, termina esa iteracion. Todo lo que venga despues de continue no lo va a ejecutar pero pasa  ala siguiente vuelta.
+
+
+

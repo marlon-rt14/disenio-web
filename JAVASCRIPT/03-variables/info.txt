@@ -1,0 +1,39 @@
+VARIABLES
+
+- Concepto
+    Es un espacio que nosotros guardamos en la memoria de nuestro programa para usarlo de vuelta 
+
+    Las variables se pueden declarar, inicializar y modificar a lo largo del tiempo 
+
+- Ejemplo
+
+- Tipos de datos: String, number, boolean, symbol 
+
+- Casos especiales de datos: undefined, null, nan; 
+    #Todos estos 3 tipos de datos nos habla de que una variable no esta definida o hay un error 
+
+    Undefined: Es un tipo de dato que nos dice que la variable existe en el programa pero no tiene un valor, esta sin definir. que la variable esta declarada pero no inicializada 
+
+    null: Nos dice que una variable esta vacia, y lo hacemos de manera intencional, la diferencia con undefined es que undefined no esta definido un valor; pero aqui al incializar una variable con null, el valor que tiene es que no tiene un valor, va estar vacia, no va a valer nada, va a ser nula.
+
+    NaN: Not a Number, nos arroja esto cuando queremos hacer operaciones que requieren de un numero y los datos deben ser numeros para que la operacion se lleve a cabo, con el operador +, suele indicar concatenar, pero los demas son NaN. 
+
+- Scope
+    # Son los bloques de codigo, los contenedores, otra forma de decirlo es como cuando declaramos variables globales y regionales; las variables se pueden utilizar solo dentro de su contenedor, de su Scope
+
+- Hoisting
+    # Explica como funcionan las fases de creacion y de ejecucion. Habla de como un sitio web puede ser afectado en la creacion y cuando lo ejecutamos. Podemos ejecutar cualquier parte del codigo antes de crearla? En javascript esto es posible en algunas situaciones. 
+
+- Tipos de variables (let, var, const)
+    # Con estas tres palabras clave podemos declarar variables y cada una tiene sus propias caracteristicas 
+
+    var: Es alcance global 
+
+    let: Nos limita el alcance de la variable al bloque en el que la ejecutamos 
+
+    const: Es una constante, lo que quiere decir que las variables constantes no pueden cambiar su valor, las definimos una vez y ya no las podemos volver a definir nunca mas. Una cualidad que tiene a diferencia de las demas es que tenemos que incializar en la misma linea que declaramos 
+
+- Crear multiples variables (separandolas con coma) -> let nombre1 = "jorge", nombre2 = "pedro";
+
+- Pruebas con Prompt
+    # Nos sirve para leer datos por teclado

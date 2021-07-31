@@ -1,0 +1,39 @@
+Operadores
+
+- Operadores de comparacion
+	# Los operadores de comparacion comparan dos expresiones y devuelven un valor Boolean que representa la relacion de sus valores
+
+	# Los operadores comparan dos valores, y si la relacion es verdadera nos devolvera true, y si es falsa, no se cumple no devolvera false
+
+	a == b => igualdad: Solo si su valor es igual 
+	a != b => inigualdad
+	a === b => identidad, estrictamente igual: hasta en el tipo de dato.
+	a !== b =>
+	a > b => mayor que 
+	a >= b => mayor que o igual que 
+	a < b => menor que
+	a <= => menor que o igual que 
+
+
+- Operadores logicos
+	# Se basan en los operadores de comparacion (true, false) para devolver una que otra cosa 
+
+	# Nos devuelven un resultado a partir de que se cumpla no una condicion, su resultado es booleano, y sus operandos son valores logicos asimilables a ellos
+
+	valor && valor2 => y - and
+	valor || valor2 => o - or
+	!valor => negado
+
+
+CAMEL CASE
+
+- Definicion
+	Nos dice que para declarar variables o nombres de funciones la primera palabra debe ir todo en minusculas, despues de la primera palabra, la primera letra de cada palabra debe ir en mayuscula. Todo unido.
+
+- Usos
+
+- Ejemplo 
+
+let palabra1Palabra2Palabra3
+let estaEsUnaFrase
+

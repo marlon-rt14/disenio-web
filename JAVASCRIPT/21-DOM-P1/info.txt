@@ -1,0 +1,118 @@
+DOM
+
+- Defincion
+
+- Concepto extendido
+
+- Nodo - Un nodo en el DOM es cualquier etiqueta del cuerpo, como un parrafo, el mismo body o incluso las etiqueteas de una lista
+
+	* Document: el nodo document es el nodo raiz, a partir del cual derivan el resto de nodos
+
+	* Element: nodos definidos por etiquetas HTML
+
+	* Text: el texto dentro de un nodo element se considera un nuevo hijo de un tipo text (texto)
+
+	* Attribute: los atributos de las etiquetas definen nodos, (en JavaScript no los veremos como nodos, sino como informacion asociada al nodo de tipo element)
+
+	* Comentarios y otros: los comentarios y otros elementos como las declaraciones doctype en cabecera de los documentos HTML generan nodos.
+
+________________________________________________________________________________________________________________________________
+
+
+Document - Metodos de Seleccion de elementos
+
+- document.getElementById()
+	# selecciona un elemento por ID 
+
+- documet.getElementByTagName()
+	# selecciona todos los elementos que coincidan con el nombre de la etiqueta especificada [Collection]
+
+	# nos devuelve una lista de elementos, no un array; una lista pero de igual se puede acceder a los elementos con un indice
+
+- document.querySelector()
+	# devuelve el primer elemento que coincida con el grupo especificado de selectores
+
+	# utilizamos los nombres de las clases e id, como si quisieramos acceder a un elemento desde CSS
+
+- documento.querySelectorAll()
+	# devuelve todos los elementos que coincidan con el grupo especificado de selectores [NodeList]
+
+	# Nos devuelve una lista de Nodos
+
+	# utilizamos los nombres de las clases e id, como si quisieramos acceder a un elemento desde CSS
+
+________________________________________________________________________________________________________________________________
+
+
+Metodos para Definir, Obtener y Eliminar de atributos
+
+- setAttribute()
+	# Modifica el valor de un atributo
+	# No solo sirve para editar, en caso de que el atributo no exista en HTML, nos lo crea
+	# Admite dos parametros, el primero es el atributo que queremos modificar y el segundo parametro el valor de ese atributo:
+		Ejemplo: .setAttribute("type", "text");
+
+- getAttribute()
+	# obtiene el valor de un atributo
+	# Admite un parametro que es el tipo de atributo y nos devuelve el valor del atributo
+
+
+- removeAttribute()
+	# remueve el valor de un atributo, no se va a ver en el html de insepeccionar
+
+	# Admite un parametro, que es tipo de atributo que queremos remover
+
+________________________________________________________________________________________________________________________________
+
+ATRIBUTOS GLOBALES
+
+# Todos los atributos HTML tienen estos atributos 
+
+- class
+	lista de clases del elemento separadas por espacios
+
+- contenteditable
+	indica si el elemento puede ser modificable por el usuario (bool)
+
+- dir 
+	indica la direccionalidad del texto [dos parametros]
+
+- hidden 
+	indica si el elemento aun no es, o ya no es relevante, no importa si es true o false, de igual manera oculta la etiqueta [dos parametros (bool)]
+
+- id 
+	define un identificador unico
+
+- style 
+	contiene declaraciones de estilo CSS para ser aplicadas al elemento
+
+- tabindex
+	# indica si del elemento puede obtener un focus de input
+	# Para probarlo lo hacemos con la tecla TAB
+
+- title
+	# contiene un texto con informacion relacionada al elemento al que pertenece.
+	# Es un texto que nos aparece cuando pasamos el mouse por encima del elemento 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

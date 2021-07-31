@@ -1,0 +1,31 @@
+CONDICIONALES
+
+- Definicion y usos
+	# Sirven para hacer que todo un bloque de codigo se ejecute o no, si una condicion se cumple. Los bloques conjunto de lineas de codigo dentro de llaves.
+
+	{
+		.........
+		........
+		.......
+	}
+
+- if
+	if (true) {
+		Si es verdadero se ejecuta este codigo, sino, no lo hace
+	}
+
+- else if
+	# Si lo anterior no se ejecuta validemos esta condicion
+
+	else if (ture){
+		Caso contrario se ejecuta este codigo
+	}
+
+	# else if, es muy importante porque nos dice si se ejecuto la primera condicion, el resto de condiciones ya no se ejecuta. De esta manera se ahorra recursos que no necesitamos desperdiciar si ponemos muchos if solamente.
+
+- else
+	# Si nada de lo anterior se cumple hacemos esto
+	
+	else {
+		se ejecuta este codigo
+	}

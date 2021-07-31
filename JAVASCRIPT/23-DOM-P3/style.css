@@ -1,0 +1,13 @@
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #fff;
+  }
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.grande {
+  font-size: 50px;
+}

@@ -1,6 +1,0 @@
-Formas de enlazar javascript
-
-- En linea (no es recomendable por la modularizacion)
-- Como contenido en la etiqueta <script>
-- Como contenido en un archivo de formato .js
-- Como un Require

@@ -1,0 +1,56 @@
+OBJETO MATH - BASICO
+
+______ METODOS ______
+
+- sqrt() 
+	devuelve la raiz cuadrada positiva de un numero
+
+- cbrt()
+	devuelve la raiz cubica de un numero
+
+- max()
+	devuelve el mayor de cero o mas numeros
+
+- min()
+	devuelve el mas pequeño de cero o mas numeros 
+- random()
+	devuelve un numero pseudo-aleatorio entre 0 - 1
+
+- round()
+	devuelve el valor de nun numero redondeado al numero entero mas cercano
+
+- fround()
+	devuelve la representacion flotante de precision simple ma cercana de un numero
+
+- floor()
+	devuelve el mayor entero menor que o igual a un numero
+
+- trunc()
+	devuelve la parte entera del numero X, la eliminacion de los digitos fraccionarios
+
+
+______ PRPIEDADES ______
+
+- PI
+	Radio de la circunferencia de un circulo respecto a su diametro, aproximadamente 3.141519
+
+- SQRT_2
+	raiz cuadrada de 1/2; equivalente, 1 sobre la raiz cuadrada de 2, aproximadamente 0.707
+
+- SQRT2
+	raiz cuadrada de 2, aproximadamente 1.414
+
+- E
+	constante de Euler, la base los logaritmos naturales
+
+- LN2
+	logaritmo natural de 2, aproximadamente 0.693
+
+- LN10
+	logaritmo natural de 10, aproximadamente 2.303
+
+- LOG2E
+	logaritmo de E con base 2, aproximadamente 1.443
+
+- LOG10E
+	logaritmo de E con base 10, aproximadamente 0.434

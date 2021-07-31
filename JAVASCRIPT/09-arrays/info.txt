@@ -1,0 +1,37 @@
+ARRAYS
+
+- Definicion y usos
+	# Los arrays ya no son un dato primitivo, los arrays ya vienen a ser objetos. 
+
+	# Los corchetes signfican que vamos a agrupar unos elementos
+
+	# La coma significa que vamos a separar cada uno de los elementos por la coma 
+
+- Formas de crear un array 
+
+let array = ["lucas", 24, "buenos aires"]
+
+
+- Acceder a los elementos
+	# Las posciciones de los array siempre empiezan desde el 0;
+
+	# Los arrays tienen posiciones y elementos, las posiciones empiezan desde el 0, y los elementos desde el 1
+let actual = array[0]
+
+ARRAYS ASOCIATIVOS
+
+- Definicion
+	# Tambien son objetos 
+	# Un array asociativo es como un array que tiene un valor asociado 
+	# En cambiar el nombre de la poscision, por ejemplo, antes los elementos se iban acolando en la posicion 0, 1, 2, etc.. Pero en lugar que los elementos se guarden la posicion 0, queremos que se guarde en "nombre", por ejemplo. Ahora el 0, ya no es 0, es nombre, y 1 es apellido por ejemplo.
+
+- Sintaxis y usos
+
+let pc = {
+	nombre: "DaltoPC",
+	procesador: "Inter CoreI7",
+	ram: "16GB"
+}
+
+document.write(pc["nombre"]); // Nos devuelve "DaltoPC"
+

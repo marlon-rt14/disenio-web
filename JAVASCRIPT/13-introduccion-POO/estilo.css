@@ -1,0 +1,9 @@
+:root {
+	--color-dark-theme: #fff;
+}
+
+@media (prefers-color-scheme: dark){
+	* {
+		color: var(--color-dark-theme);
+	}
+}

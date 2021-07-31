@@ -1,0 +1,47 @@
+--------------- CREACION DE ELEMENTOS
+
+- createElements()
+	# recibe un parametro, y tenemos que ponerlo todo en mayuscula, de otra forma no nos va a reconocer el elemento
+
+	# crea elementos, un nodo de tipo element
+
+- createTextNode()
+	# crea un nodo de tipo text
+
+
+- appendChild()
+	Lo podemos utilizar para poner nodos dentro de otros nodos
+
+- createDocumentFragment()
+	# aparecio en emascript 6 para solucionar un problema de uso de recursos en exceso. El problema era que por ejemplo si creabamos un ciclo para crear elementos, el DOM con cada pasaba borraba lo que ya tenia y lo volvia a pintar con el nuevo elemento.
+
+
+
+---------------- OBTECION Y MODIFICACION DE CHILDS (PROPIEDADES)
+
+- firstChild
+	# obtiene el primer hijo de un contenedor
+	# los espeacios entre las etiquetas html tambien son texto
+
+- lastChild
+	# obtiene el ultimo hijo de un contenedor, los espacios en el html tambien cuentas como hijos, como nodos
+
+- firstElementChild
+	# obtiene el primer elemento html hijo de del contenedor, no importa si hay espacios porque recuepra el primer elemento
+
+- lastElementChild
+	# obtiene el ultimo elemento html hijo de del contenedor, no importa si hay espacios porque recuepra el ultimo elemento
+
+- childNodes
+	# Nos devuelve todos los nodos hijos
+
+	# nos devulve un valor de tipo nodeList, no es un array. La manera de comprobarlo es haciendo uso de los metodos de los arrays y notaremos que nos va a saltar un error.
+
+	# sin embargo al ser una lista podemos recorrerlo con algun bucle como forEach por ejemplo
+- children
+	# no son todos los nodos, sino solo los elementos hijos
+
+	# nos devuelve una coleccion de elementos HTML, solo las etiquetas
+
+	# las colecciones html no se pueden recorrer, al menos no con un foEach(), la forma de hacerlo es con un for-in  un for-of
+

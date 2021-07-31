@@ -1,0 +1,95 @@
+CONSOLE 
+
+------------ Funciones de registro
+
+- assert() 
+	Aparece un mensajede error en la consola si la afirmacion es falsa. Si la afirmacion es verdadera, no aparecera nada.
+	# No recomendable
+
+- clear()
+	limpia la consola
+
+- error()
+	muestra un mensaje de error en la consola web
+
+- info()
+	Emite un mensaje informativo a la Consola Web, en Firefox y Chrome, se muestra un pequeño icono "i" junto a estos elementos en el registro de de la Consola Web
+
+- log()
+	muestra un mensaje en la consola web (o del interprete de JavaScript)
+
+- table()
+	esta funcion toma un argumento obligatorio: data, que debe ser un array o un objeto, y un parametro adicional: columns y nos muestra una tabla en consola
+
+- warn()
+	imprime un mensaje de advertencia en la consola web
+
+- dir()
+	despliega una lista interactiva de las propiedades del objeto JavaScript especificado. [NO ESTANDAR]
+	# No recomendable
+
+
+----------------- Funciones de conteo
+
+
+
+- count()
+	registra el numero de veces que se llama a count(). Esta funcion toma como argumento opcional una etiqueta.
+
+- countReset()
+	Resetea el contador console.count()
+
+
+
+------------------- Funciones de agrupacion
+
+- group()
+	crea un nuevo grupo en lineas de codigo en el registro de la consola web.
+	# Se pude como pasar como parametro en comillas el nombre del grupo
+
+- groupEnd()
+	remueve un grupo en linea en el registro de la consola web
+	# cerrar el grupo o volver atras
+
+- groupCollapsed()
+	crea un grupo en linea pero al contrario, el usuario debe expandirlo para verlo
+	# Es igual que .group(), pero la diferencia es que group() nos muestra el grupo de lineas abierto y .groupCollapsed() nos muestra cerrado
+
+
+
+------------------- Funciones de temporizadores
+
+- time()
+	inicia un temporizador
+
+- timeLog()
+	registra el valor actual de un temporizador
+	# nos dice cuanto tiempo ha pasado desde que se incio el temporizador
+
+- timeEnd()
+	detiene el temporizador
+
+- Modificar el texto
+
+("%ctexto","estilo CSS")
+
+----------------- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

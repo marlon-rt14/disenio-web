@@ -1,0 +1,36 @@
+ATRIBUTOS DE INPUTS
+
+- className
+	# obtiene el nombre de la clase
+
+- value
+	# es lo que esta adentro del input 
+
+- type
+	# podemos cambir el tipo de atributo en type: text, submit, color, range, etc, directamente sin la necesidad de usar getAttribute o setAttribute
+
+- accept
+	# lo usamos para especificar el tipo de archivo que que queremos seleccionar. Se nos abre el gestor de archivos de la computadora
+
+- form
+	# especifica el formulario al que pertenece, aunque no se encuentra dentro de la etiqueta form. de esa manera podria enviar los datos al servidor 
+
+- minlength
+	# es la minima cantidad de caracteres que tiene que tener un input
+
+- placeholder
+	# es como una breve informacion que se muestra en el input pero que desaparece cuando ya escribimos algo 
+
+- required
+	# Nos permite decir si es requerido o no
+	# no hace falte poner true para que sea requerido, podemos poner cualquier cosa, excepto "", porque estamos diciendo este campo va a requir algo, por eso podemos poner un espacio inclusive
+
+	# Esto mas que nada sirve para darle indicaciones al cliente, pero las validaciones se hace en el lado del backend por seguridad. Tambien es recomendable hacer las validaciones en el lado del frontend para que el servidor no consuma muchos recursos. Entonces podriamos hacer las validaciones con JavaScript porque las validaciones no se ejecutarian en el lado del servidor, las validaciones las haria el navegador del cliente, computadora, celuluar, etc 
+
+ATRIBUTO STYLE
+
+- usos y ejemplos
+	# basicamente el atributo style nos permite modificar algo de CSS en el atributo 
+
+- propiedades Camel Case
+	# En lugar de poner las propiedades como background-color, como lo hariamos en CSS, en javascript lo hacemos con propiedades camel case: backgroundColor.
