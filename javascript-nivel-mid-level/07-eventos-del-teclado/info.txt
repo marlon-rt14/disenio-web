@@ -1,0 +1,11 @@
+
+Eventos del teclado
+	- keydown
+		# ocurre cuando una tecla se deja de presionar
+
+	- keypress
+		# ocurre cuando una tecla se presiona y suelta en el mismo elemento
+
+	- keyup
+		# ocurre despues de que los dos eventos anteriores hayan concluido consecutivamente, cuando se suelta en ese mismo elemento
+

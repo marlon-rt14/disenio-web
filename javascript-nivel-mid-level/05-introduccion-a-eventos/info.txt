@@ -1,0 +1,47 @@
+
+EVENTOS
+
+Eventos
+	- Defincion
+		# Podemos definirlos como cualquier cambio que ocurre en la pagina desde que el sitio web carga, no carga, salte, le demos un click, se toque el teclado. Tambien lo podemos ver como cualquier cosa que suceda en la pagina y cualquier cambio que haya, tambien se considera un evento. 
+
+		# Cuando nada de la pagina esta cargado se puede considerar el punto cero, y despues a partir de ahi empiezan a suceder un monton de cosas, se carga el sitio web, empiezan a aparecer los elementos, empezamos a mover el mouse, tocamos teclas, damos click, damos doble click, tocamos una tecla, la soltamos, tocamos el boton derecho y muchas otras cosas. 
+
+		# Un evento es eso, es cada cosa que sucede. Los eventos de por si, no nos sirven un choto, es asi, de por si solos no nos sirven. Ahora, ¿cuando los eventos son utiles? Cuando asignamos un codigo.
+
+	- de Eventos o "Event Handlers"
+		# Manejadores de eventos, se los puede reconocer porque comienzan con la palabra "on", "onclick"
+
+		# No aplicac camel-case
+
+	- Escucha de eventos o "Event Listeners"
+		# Es la forma recomendable, con esto agregamos una escucha de eventos las obeto. 
+
+		# Acepta dos paramentros, el primero es el tipo de evento como por ejemplo "click", y el segundo parametro es una funcion comun, ya que no acepta funciones flecha declaradas en una vriable, no aplica.
+
+		# Si podemos usar una funcion flecha, pero no declarando una variable que sea una funcion, si no como segundo parametro tenemos que declarar la funcion flecha. 
+
+		# Las funciones flecha solo acepta un parametro, que es un evento, el evento actual
+
+	- El objeto Event
+		# Es el evento actual, que lo pedmos pasar como parametro, es un objeto de tipo Event que le podemos dar cualquier nombre
+
+	- Flujo de eventos o "event flow"
+		# con esto nos referimos al orden que que se van a ejecutar los eventos, tenemos dos tipos de orden. Event bubbling y event capturing. Los de burbuja y los de captura
+
+		# Se ejecutan primero los eventos mas especificos (hijos) hasta los menos especificos (contenedores)
+
+	- Event Bubbling vs Event Capturing
+		# Event Bubbling es el que viene por defecto, Event capturing no es el que viene por defecto pero tambien podemos hacer que se ejecute de esa forma. 
+
+		# Se ejecutan primero los eventos mas especificos (hijos) hasta los menos especificos (contenedores)
+
+		# La forma de cambiar esto es agregando un parametro mas al listener, agregando true
+
+		# con el parametro true, etamos diciendo que se va a ejecutar primero, de esta menera podemos ir cambiando el orden que se ejecutan los eventos
+
+	- event.stopPropagation()
+		# de esta forma hacemos que la pila de eventos se dentenga, y solo se ejecute el evento del boton en este caso.
+		# Lo que hace es que se dejen de ejecutar todos los eventso que estaban asociados, que no se ejecute ningun evento mas .
+
+

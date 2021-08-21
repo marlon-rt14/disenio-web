@@ -1,0 +1,65 @@
+
+EVENTOS DEL MOUSE
+	- click
+		# Ocourre con un click
+	
+	- dblclick
+		# Ocurre con un doble click
+
+	- mouseover
+		# ocurre cuando el puntero se mueve sobre un elemento o sobre uno de sus hijos
+
+		# se ejecuta cuando sale o entra al elemento que le asignamos el evento
+
+		# se ejecuta cuando sale o entra de uno de sus hijos
+
+		# se ejecuta cuando entra a un elemento
+
+	- mouseout
+		# ocurre cuando se mueve el puntero fuera de un elemento o de sus elementos secundarios
+
+		# se ejecuta cuando se sale de un elemento
+
+
+	* OTROS ###################################################################3
+
+	- contextmenu
+		# ocurre con un click en el boton derecho de un elemento para abrir un menu contextual
+
+		# se ejecuta cuando se apreta y suelta
+
+		# se ejecuta cuando se apreta y suelta en alguno de sus hijos
+
+		# NO se ejecuta cuando se apreta adentro y se suelta afuera del elemento, al igual que click
+
+	- mouseenter
+		# ocurre cuando el puntero se mueve sobre un elemento
+
+		# se ejecuta solo cuando entra al elemento
+
+		# mouseenter y mousemove son muy parecidos, la unica diferencia es que mouseenter se utiliza para internet explorer.
+
+	- mousemove
+		# ocurre cuando el puntero se mueve mientras esta sobre un elemento
+
+		# se ejecuta cuando esta dentro del elemento y en cualquiera de sus hijos
+
+	- mouseleave
+		# ocurre cuando el puntero se mueve fuera de un elemento
+
+		# se ejecuta cuando se sale del elmento y de todos su hijos
+	
+	- mousedown
+		# ocurre cuando un usuario apreta un bototn del mouse sobre un elemento
+
+		# se ejecuta cuando apretamos, no hace falta soltar para que se ejecute
+
+		# se ejecuta incluso si apretamos y soltamos fuera del elemento
+
+	- mouseup
+		# ocurre cuando el usuario suelta un boton del mouse sobre un elemento
+
+		# se ejecuta cuando soltamos el click sobre el elemento o sobre uno de sus hijos, incluso si apretamso fuera del elemento y lo soltamos dentro del elemento
+
+
+

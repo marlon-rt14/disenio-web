@@ -1,0 +1,22 @@
+
+LOCATION
+
+# Nos devuelve la locacion, la localizacion
+
+- window.location.href
+	devuelve el href (URL) de la pagina actual, la ubicacion de donde se encuentra la pagina en el ordenador, si esta desde un servidor nos muestra la direccion del servidor mas el dominio
+
+- window.location.hostname
+	devuelve el nombre de dominio y subdominio del servidor web
+
+- window.location.pathname
+	devuelve la ruta y el nombre de archivo de la pagina actual. 
+	Nos dice en donde estamos, del dominio en donde estamos.
+	Donde estamos, desde el origen, donde estamos.
+	El pathname, es todo lo que venga despues del dominio
+
+- window.location.protocol
+	devuelve el protocolo web utilizado (http: o https:)
+
+- window.location.assign()
+	carga un nuevo documento

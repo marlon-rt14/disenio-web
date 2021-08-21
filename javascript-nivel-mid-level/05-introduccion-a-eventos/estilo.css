@@ -1,0 +1,14 @@
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #fff;
+  }
+  .contenedor {
+    padding: 30px;
+    background: red;
+  }
+}
+
+.contenedor {
+  padding: 30px;
+  background: red;
+}

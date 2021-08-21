@@ -1,0 +1,75 @@
+
+Eventos de la interfaz
+
+	- error
+		# ocurre cuando sucede un error durante la carga de un archivo multimedia
+
+	- load
+		# ocurre cuando un objeto se ha cargado
+
+	- beforeunload
+		# ocurre antes de que el documento esté a punto de descargarse
+
+		# ocurre cuanto estas por irte del sitio
+
+	- unload
+		# ocurre una vez que se ha descargado una pagina
+
+		# ocurre cuando te fuiste del sitio
+
+	- resize
+		# ocurre cuando se cambia el tañao de la vista del documento
+	
+	- scroll
+		# ocurre cuando se desplaza la barra de desplazamiento de un elemento
+
+		# tambien se aplica a los div o contenedores
+
+	- select
+		# ocurre cuando despues de que el usuario selecciona algun texto de <input>  o <textarea>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

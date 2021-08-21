@@ -1,0 +1,37 @@
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #fff;
+  }
+  .contenedor {
+    padding: 30px;
+    background: red;
+  }
+}
+
+.contenedor-1 {
+  padding: 30px;
+  background: red;
+}
+
+.contenedor-2 {
+  padding: 30px;
+  background: blue;
+}
+
+.button {
+  padding: 30px;
+}
+
+.input-prueba {
+  /* border: 1px solid #000; */
+  border:none;
+  outline: none;
+  border-radius: 50px;
+  padding: 7px;
+  color: #444;
+}
+
+.input-prueba:focus {
+  border:none;
+  outline: none:
+}

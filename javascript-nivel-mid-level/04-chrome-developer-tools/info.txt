@@ -1,0 +1,39 @@
+
+HERRAMIENTAS DE DESARROLLO DEL NAVEGADOR (CHROME)
+
+Pestaña Elements
+	- Filtros y buscar por palabra claves
+	- Modificar, Crear y eliminar etiquetas
+	- Modificar propiedades de CSS
+	- Event Listeners
+	- Properties
+	- Opciones de copiar
+	- Seguir explorando
+
+Pestaña Resources
+	- Ver y guardar archivos
+	- Informacion ofrecida
+	- Cambios en tiempo real
+	- Snippets -  Ejecutar codigo por fragmentos
+
+Pestaña Networks
+	- Intefaz
+	- Sort By u Filtros de Busqueda
+	- Limpiar Cookies y Cache
+	- Importar y Exportar
+
+Pestaña Timeline / Performance
+	- Uso y Grabacion
+	- Screenshots de la grabacion
+	- Controls
+	- Overview * FPS, CPUM Net
+	- Flame Chart
+	- Details
+	- Sugerencias de grabacion
+
+Pestaña Application
+	- Application
+	- Storage
+	- Cache
+	- Background Services
+	- Frames

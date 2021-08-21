@@ -1,0 +1,87 @@
+INTRODUCCION A Window 
+
+# Para empezar Window es un objeto de JavaScript, pero no cualquier objeto, es un objeto de la ostia porque es el objeto mas grande en la mas alta jerarquia de javascript. Lo que significa que hasta el DOM depende Window 
+
+- Hereda las propiedades de EventTarget
+
+- open()
+	Carga un recurso en el contexto de un nuevo navegador o uno que ya exista 
+
+- close()
+	cierra la ventana actual, o la ventana en la que se llamó
+
+- closed
+	indica si la ventana referenciada está cerrada o no 
+
+* - name
+	obtiene / establece el nombre del contexto de exploracion de la ventana
+
+- stop()
+	detiene la carga de recursos en el contexto de navegacion actual
+
+- alert()
+	muestra un cuadro de alerta con el contenido especificado y un boton de aceptar
+
+- print()
+	abre el cuadro de dialogo Imprimir para imprimir el documento acutal
+
+- prompt()
+	abre un cuadro de dialogo con un mensaje que solicita al usuario un dato (String)
+
+- confirm()
+	abre un cuadro de dialogo con un mensaje y dos botones: Aceptar y Cancelar. Nos devuelve un booleando
+
+#####################################
+
+- screen
+	devuelve una referencia al objeto de pantala asociado con la ventana
+
+- screenLeft
+	devuelve la distancia horizontal entre el borde izquierdo del navegador y el borde izquierdo de la pantalla 
+
+- screenTop
+	devuelve la distancia vertical entre el borde superior del navegador y el borde superior de la pantalla
+
+- scrollX
+	devuelve el numero de pixeles que el documento se desplaza actualmente horizontalmente
+
+- scrollY
+	devuelve el numero de pixeles que el documento se desplaza actualmuente verticalmente
+
+- scroll() scrollTo()
+	desplaza la DOM a un lugar particular en el documento (con option y con posiciones)
+
+#####################################
+
+- minimize()
+	minimiza la ventana
+
+	# Ya no tiene soporte desde hace años y años 
+
+- resizeBy()
+	cambia el tamaño de la ventana actual en una cantidad especifica
+
+- resizeTo()
+	redimensiona dinamicamente la ventana
+
+# resizeBy() y resizeTo() son casi lo mismo pero la diferencia es que uno es relativo 
+
+- moveBy()
+	mueve la ventana en una ubicacion relativa
+
+- moveTo()
+	mueve la ventana en una ubicacion absoluta
+
+# moveBy() y moveTo() son casi lo mismo pero la diferencia es que uno es relativo 
+
+#####################################
+
+- objetos barprop
+
+# Nos va a devolver un booleano en caso de que sea visible
+	- locationbar : window.locationbar.visible
+	- menubar
+	- pesonalbar
+	- scrollbars
+	- statusbar
+	- toolbar

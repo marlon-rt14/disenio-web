@@ -1,0 +1,10 @@
+
+@media (prefers-color-scheme: dark){
+	* {
+		color: #fff;
+	}
+}
+
+body {
+	width: 200%;
+}
