@@ -19,9 +19,14 @@
 // document.write(parrafo);
 
 //para seleccionar todos los elementos
-// parrafo = document.querySelectorAll(".parrafo");
-// document.write(parrafo + "<br>");
-// document.write(parrafo[0]);
+parrafo = document.querySelectorAll(".parrafo");
+document.write(parrafo + "<br>");
+document.write(parrafo[0]);
+console.log(parrafo);
+
+for (const valor of parrafo) {
+	console.log(valor);
+}
 
 //##############################################
 // Metodos para Definir, Obtener y Eliminar de atributos
