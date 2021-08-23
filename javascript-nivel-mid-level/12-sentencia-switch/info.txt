@@ -1,0 +1,16 @@
+
+SENTENCIA SWITCH
+
+* Sintaxis y clausula case
+    # Nos permite evauluar una exprexion o una variable y tomar acciones para cadacaso.
+
+* break
+    # Nos sirve para evitar que se sigan ejecutando el resto de instrucciones de cada case, es decir que despues de terminar las acciones de un case, el programa debe terminar su scope,
+
+* default
+    # Defual vendria a ser el equivalente a else{}, cuando ninguna de los case se cumple. 
+
+______________________----______
+
+# A nivel de rendimiento es muycho mejor if
+

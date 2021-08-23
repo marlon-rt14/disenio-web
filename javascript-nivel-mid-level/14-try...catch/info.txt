@@ -1,0 +1,44 @@
+
+Try... Catch
+Cuando el try detecta un error se lo pasa como parametro al catch, y el catch va a saber que hacer. Cuando ejectuamos try... catch, elimina los eventHandlers, que son para administrar los errores, los eventos que ocurren cuando hay un error y se desactiva por completo en el navegador para que no nos salten errores y los podamos manejar nosotros 
+
+Los errores estan basados en el comportamiento del bloque de codigo en el try que el programador espera, si hacemos incoherencias en el bloque de codigo del try, igual nos va a saltar un error; puede ser SyntaxError, UnexpectedError, Undefined o algun otro error.
+
+Lo recomendable es usar try en casos muy especificos, no siempre. Hay que intentar resolver el error, debugear depurar para el error que nos lanza y solucionarlo. En caso de que sepamos que nos va a saltar un error podemos usar un IF o ese tipo de cosas.  
+
+Cuando si debemos usar seria por ejemplo cuando tenemos un proyecto muy grande y tenemos todo calculado, y la probabilidad que que salte un error es muy pequeña pero existe, entonces debemos usar un TRY para que esa minima posibildad ocurra hacer algo. El objetivo es no abusar del TRY. Tambien podemos usarlo cuando estamos creando un programa y por algun motivo en especial escapa de nuestras posibilidades, necesitamos manejar una excepcion, lo manejamos que no hay ningun problema. 
+
+El TRY y el CATCH si se usa pero no tanto como el IF o BUCLES que los usamos constantemente. Solo debemos usarlos cuando nos sea indespensable. 
+
+NOTA: LA DEPURACION ES EL PROCESO EN EL QUE LIMPIAMOS TODO EL CODIGO SOLUCIONANDO ERRORES O BUGS DESDE CERO Y VOLVERLO A CARGAR PARA QUE NOS QUEDE TODO LIMPIO SOLUCIONANDO PROBLEMAS DE REFERENCIA, ETC.
+
+    Sintaxix
+	try{
+	.........
+	........
+	}catch(error){
+	.........
+	........
+	}
+
+    Objeto error
+	# Los errores son objetos, 
+
+    Catch Incondicional
+	# Es cuando el catch no ejecuta nada o todo el bloque de codigo del catch sin restricciones.
+
+    Catch Condicional
+	# Es cuando en base a una condicion, ejecuta o no un proceso
+
+    Sentencia Throw
+	# Es para tirar un error, nos lanza una excepcion
+	
+	# Tambien puede lanzar objetos, por ejemplo un array asociado, o un vector simple. 
+	# Al lanzarnos un objeto, le podemos lanzar culquier objeto que se nos ocurra
+
+    Finally
+	# El finally se ejecuta pase lo que pase, haya o no hay error.
+
+	# El finally tiene mas prioridad que el try o el catch. y se va a ejecutar siempre, por ejemplo si hacemos una funcion que nos devuelve un valor, nos devolvera el valor del finally aunque try este correcto.
+
+	# el finally es tan poderoso que sobre escribie el valor de try o el catch

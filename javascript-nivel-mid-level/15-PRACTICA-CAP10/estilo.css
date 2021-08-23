@@ -1,0 +1,54 @@
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #fff;
+  }
+}
+
+.modelo-background {
+  box-sizing:border-box;
+  background: rgba(0,0,0,.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.modelo {
+  background: #fff;
+  width: 500px;
+  margin:auto;
+  text-align: center;
+  padding: 15px;
+}
+
+.resultado {
+  /* font-size: 23px; */
+  margin: 0;
+}
+
+.mensaje {
+  margin: 0;
+}
+
+.red {
+  color: #f00;
+}
+
+.green {
+  color: #0a0;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    display:flex;
+  }
+  100%{
+    opacity: 1;
+    display: flex;
+  }
+}

@@ -1,0 +1,13 @@
+
+CONTROL DE FLUJO Y MANEJO DE ERRORES
+
+Control de flujo es la direccion en la que apunta el codigo, ejemplo no podemos mostrar el valor de una variable sin antes haberla declarado e inicializado, tiene un orden. Asi mismo tambien podemos alterar el flujo del programa con condicionales, por ejemplo si esta condicion es verdadera ejecuta esta linea de codigo. 
+
+* Sentencia de bloque
+	# Es crear un nuevo ambito de variables, un bloque de codigo. Lo que es scope. 
+
+* Sentencias de control de flujo
+	# Pueden ser condicionales que nos ayudan a controlar con esto, a trabajar con los bloques
+
+* Sentencias de manejo de excepciones
+	# Nos sirve para menejar los errores que nos saltan en el desarrollo del programa, o tirarle errores al usuario, porque creemos que ese error sera para su beneficio. Simplemente es manejar los errores, el manejo total de los errores

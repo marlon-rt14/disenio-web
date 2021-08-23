@@ -1,0 +1,25 @@
+
+Excepciones y tipos de excepciones
+
+Una excepcion es un error que nos salta durante la ejecucion de nuestro programa 
+
+    * Definicion y usos
+	# Las excepciones nos permite manejar los errores, nosotros lanzamos una excepcion cuando lanzamos una excepcion o recibimos una excepcion; está sucediendo un error, hay algo en programa que no salio como esperamos, por eso se denomina excepcion.
+	# Mas que nada son para el desarrolladar sepa que hay un error que está sucediendo y se pueda solucionar; A veces no solo el desarrollador si no que puede crear errores para avisarles a los usuarios o a otros desarrolladores
+
+    * Excecpciones ECMAScript
+	# Son las que estan relacionadas con la tecnologia detras de Javascript, que es ECMAScript
+	# Estos son los errores mas comunes que vamos a tener durante la ejecucion del programa 
+	    - Error
+	    - InternalError
+	    - RangeError
+	    - ReferenceError
+	    - SyntaxError
+	    - TypeError
+	    - URIError
+
+    * DOMException y DOMError
+	# Son las que estan relacionadas al DOM 
+
+
+NOTA: SON MUCHOS LOS ERRORES QUE SE PUEDE TENER TANTO EN ECMAScript y del DOM, AQUI SOLO SE HIZO UNA DESCRIPCION GENERAL DE LOS ERRORES Y PORQUE SUCEDEN. PARA MAYOR INFORMACION LEER LA DOCUMENTACION OFICIAL.
