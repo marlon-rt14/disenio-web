@@ -1,0 +1,14 @@
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #fff;
+  }
+}
+
+
+.red {
+	color: #c99;
+}
+
+.green {
+	color: #9c9;
+}

@@ -1,0 +1,17 @@
+
+TEMPORIZADORES
+Es algo que nos permite hacer trabajo con tiempo 
+
+setTimeout()
+	# Reicbe dos parametros, el primero es una funcion y el segundo en cuánto tiempo lo queremos ejecutar, el tiempo en milisegundos.
+
+setInterval()
+	# en lugar de ejecutar una funcion a los dos segundos, nos ejecuta una funcion cada dos segundos
+
+clearTimeout()
+	# elimina el temporizador, diciendo que no se ejecute
+
+clearInterval()
+
+
+
