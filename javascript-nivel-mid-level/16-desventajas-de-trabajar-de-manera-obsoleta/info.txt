@@ -1,0 +1,54 @@
+
+DESVENTAJAS DE TRABAJAR DE MANERA OBSOLETA
+
+- ¿Cuando algo se vuelve obsoleto?
+# Obsoleto est algo que ya no es util para las circunstancias actuales porque...
+    - "Deprecated"
+	# No se usa mas, ya no es util o va a ser reemplazado en poco tiempo 
+
+    - Inutil
+    - No recomendado
+    - Con Bugs o Fallos
+    - Está por ser reemplazado
+    - Hay mejores formas de hacerlo
+
+- Los efectos negativos (aplicado a metodos, clases y propiedades)
+    - Uso excesivo de recursos
+    - Codigo con Bugs o Fallos
+    - Codigo innecesariamente largo
+    - SEO
+
+- ¿Como verificar si esta obsoleto?
+    - 1 de cada 3 WEBS utiliza librerias de javascript obsoletas
+    - verificar si tienen o usan funciones, metodos, objetos o metodologias obsoeltas
+    - verificar en los sitios basados en estandares oficiales
+
+METODOS DE CADENAS OBSOLETOS O NO RECOMENDADOS
+    - big() - crea un <big>
+    - blink() - crea un <blink>
+    - blod() - crea un <blod>
+    - fixed() - crea un <tt>
+    - fontcolor() - crea un <font color>
+    - fontsize() - crea un <font>
+    - italics() - crea un <i>
+    - anchor() - crea un <a> (sin href)
+    - small() - crea un <small>
+    - strike() - crea un <strike>
+    - sub() - crea un <sub>
+    - sup() - crea un <sup>
+
+METODOS ESPECIFICOS OBSOLETOS
+    - observe()
+    - unobserve()
+    - getNotifier()
+    - wathc()
+    - unwatch()
+    - toSource()
+    - escape() (la funcion)
+    - unescape() (la funcion)
+    - eval como metodo
+    - uneval como metodo
+
+
+
+
