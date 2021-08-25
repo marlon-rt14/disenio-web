@@ -1,0 +1,20 @@
+
+PROMESAS
+
+- Concepto
+    # Las promesas son un objeto, cada objeto tiene dos callbacks. Uno llamado reject y otro llamado resolve. Pero a su vez representan algo porque las promesas representan algo.
+
+
+- ¿Que puede representar?
+    # Estos dos callbacks representan dos cosas distintas. 
+    # En realidad tiene 3 callbacks, tiene un callback que llama a otros dos callbacks
+
+    * terminacion de una operacion asincrona
+	* resovle
+	* reject
+    * fracaso de una operacion asincrona
+	* resovle
+	* reject
+
+- Ejemplos y solucion al problema de los callbacks
+

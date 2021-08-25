@@ -1,0 +1,11 @@
+
+CALLBACKS
+
+- Concepto (Function in function)
+    # Es una funcion dentro de una funcion
+    # Es una funcion que pasamos como parametro otra funcion
+
+- Ejemplos
+
+- Problemas de los callbacks
+
