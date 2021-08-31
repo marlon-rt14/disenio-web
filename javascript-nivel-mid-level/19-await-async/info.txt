@@ -1,0 +1,8 @@
+
+FUNCIONES ASINCRONAS
+
+Las promesas son asincronas, que quiere decir que trabajan en tiempo real 
+
+- Esperan a recibir la informacion y cuando la reciben ejecutan esta opcion 
+
+- Las funciones asincronas trabajan con promeas
