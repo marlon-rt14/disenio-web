@@ -1,0 +1,7 @@
+en el archivo package.json en la seccion de scripts, podemos escribir nuestros propios comandos
+
+- hay comando que reconoce npm,
+	# para elos usamos en el terminal el comando <npm start>
+
+- hay comandos que podemos hacer pero que npm no los reconoce
+	# ejecutamos el comando <npm run desarrollo>
