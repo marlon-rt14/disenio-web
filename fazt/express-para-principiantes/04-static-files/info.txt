@@ -1,0 +1,7 @@
+
+# Escribimos el middleware casi al final porque tiene que pasar por todas las rutas
+
+# app.use(express.stati())
+	- Ya viene instalado con express
+
+# Quiere decir que despues de haber pasado por todas las rutas al final va a llegar al metodo static() y va a pintar el archivo html, es decir si la ruta solicitada no coincide con ninguna al final va a llegar al archivo html
