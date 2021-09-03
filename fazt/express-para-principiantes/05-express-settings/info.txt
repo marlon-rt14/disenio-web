@@ -1,0 +1,23 @@
+
+# app.set('appName', 'Fazt Express Tutorial');
+	- Usamos el metodo set() para establecer variables
+	- Es como si crearamos variables, el primer parametro es el nombre de la variables y el segundo es el valor de la variable.
+
+# console.log(app.get('appName'));
+	- usamos el metodo get() para obtener el valor de la variable
+
+# Express tiene algunos nombres de variables reservados para configurar determinadas cosas en express, por ejemplo:
+	- port
+
+" Es muy comun usar motores de plantillas, los motores de plantillas nos ayudan a extender el html, por ejemplo cuando hacemos una consulta a la base de datos y queremos pintar esos datos por pantalla. Un motor de plantilla es EJS
+
+# EJS está tan integrado con express que no hace falta importarlo con require(), solamente llamamos a sus metodos
+
+EJS - HTML
+La diferencia es que ejs es javascript y html es un lenguaje de maquetado y trabajan por separado. Con los motores de plantilla podemos combinar html y ejs, por ejemplo cuando queremos enviar datos de una base de datos desde el servidor a las vistas, alli solo pasamos como parametros a la plantilla y ya podemos seguir trabajando los datos desde html, y todo esto del lado del backend, el usuario no vera lo que hacemos, es otra diferencia cuando trabajamos con javascript del lado del frontend, el usuario si puede ver lo que hacemos. 
+
+Hay mas motores de plantillas y cada uno tiene su sintaxis, otro son:
+	- pug
+	- handlebars
+
+
