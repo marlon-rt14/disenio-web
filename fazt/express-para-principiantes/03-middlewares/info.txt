@@ -1,0 +1,15 @@
+
+MIDDLEWARES
+
+# Un middleware no es mas que un manejador de peticion que nosotros podemos ejecutar antes de que lleguen a su ruta original.
+
+# El middleware funciona para cualquier ruta que creemos.
+
+# Todos los middleware se ejecutan en la funcion app.use()
+
+# Los middlewares son funciones que nos sirven para procesar datos antes de que lleguen a las rutas, por ejemplo para validar un usuario
+
+# morgan
+	Es un paquete npm que hace los middlewares
+
+
