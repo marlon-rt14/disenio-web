@@ -1,0 +1,18 @@
+
+QUE ES EXPRESS
+Express es un framework de nodeJS o es un frameword de JavaScript que nos permite crear aplicaciones web del lado del servidor. Cuando trabajamos con una aplicacion web, nosotros necesitamos enviar HTML CSS Javascript, escribirlo es muy sencillo; pero el servidor web se encarga de enviar esos archivos. Pero no solo podemos enviar esos archivos sino que tambien podemos recibir datos de los usuarios, enviar determinados tipos de archivos pesados como videos o imagenes, al final de lado del servidor nosotros podemos controlar la logica que se le va a mostrar al usuario del lado del frontend. Hace unos años se lo podia hacer con PHP o ruby pero se ha empezado a popularizar javiscript del lado del servidor para evitar aprender lenguajes distintos y conocer lo que ya conocemos del frontend, poder tambien escribir el servidor. Entonces nodeJS te permite crear una aplicacion real escribiendo Javascript puro. 
+
+Express no te da todo lo que necesitas en el backend, solo nos da lo que necesitamos para crear el servidor web. Cosas como conectarse a la base datos, subir imagenes; express se complementa de otros modulos que lo hacen bastante bien. Es decir express solo se encarga de hacer una sola cosa pero la hace bien, y para hacer otras cosas podemos usar otros modulos.
+
+Corre en un solo hilo, es muy rapido.
+Es asincrona, con conceptos de codigo asincrono  
+Compartir codigo entre el navegador y el servidor 
+Compartir paradigmas de operacion como POO entre frontend y backend 
+Usar las mismas librerias en backend y frontend 
+
+Stack MEAN / MEARN
+	Conjunto de aplicaciones que nos permite crear aplicaciones web 
+
+Caracteristicas en tiempo real
+Crear apliaciones MVC
+
