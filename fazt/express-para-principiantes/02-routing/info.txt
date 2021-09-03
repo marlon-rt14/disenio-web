@@ -1,0 +1,30 @@
+
+para instalar nodemon
+	# npm i nodemon --save-dev
+	# nodemon tiene su propia pagina nodemon.io
+	# se puede abreviar --save-dev por <npm i nodemon -D>
+
+PACKAGE.JSON 
+	* Dependecies
+		Significa que mi proyecto depende de estos paquetes
+		Son modulos que necesito en produccion
+	* dvDependecies
+		Significa que mi proyecto tiene estos modulos que me va a ayudar a desarrollar el codigo
+		Son modulos que depende el desarrollo
+
+	npx nodemon index.js
+
+	npx -> significa que no esta instalado en todo el proyecto
+	nodemon -> en lugar de ejecutar con node, lo hacemos con nodemon 
+
+	podemos usar el metodo res.send() cuando queremos enviar un dato, pero cuando queremos enviar un objeto, por ejemplo un objeto usuario que consta de nombre, apellido, edad, CI; son varios datos de un solo objeto, para ello usamos JSON: res.JSON()
+
+	podemos crear rutas dinamicas con la siguiente sintaxis
+
+	app.post('/user/:id)
+
+req.body() y req.params() lo podemos aplicar en todos los metodos
+
+app.all()
+// all no es un metodo http. Es una funcion de express
+// sirve para cuando queremos hacer algo antes de que llege a una ruta http
