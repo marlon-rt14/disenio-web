@@ -1,0 +1,93 @@
+# express
+	- framework del backend
+	- express es el framework mas popular de nodejs para la creacion de aplicaciones backend
+
+# mysql
+	- conectarnos a la base de datos mysql
+	- es un modulo de npm para conectarnos a la base de datos. Este modulo NO ES LA BASE DE DATOS, tan solo sirve para conectarnos y hacer consultas
+
+# complementos o frameworks de express
+{
+	# expres-handlebars
+		- motor de plantillas
+		- es la integracion del motor de plantillas handlebars en express. Otras opciones son jade, pug, ejs, jinja, etc
+
+	# express-session
+		- guardar sesiones dentro de express
+		- administra las sesiones de nuestra app, sera necesario para autenticar a un usuario mas tarde
+
+	# express-mysql-session
+		- guardar sesiones dentro de mysql
+		- este modulo almacenará las sesiones en la base de datos, en lugar del servidor. Esto es ideal cuando la aplicacion esté en produccion
+	
+	# express-validator
+		- es un modulo para validar los datos que el usuario nos envia desde la aplicacion cliente
+}
+
+# complementos que nos facilitan el desarrollo
+{
+	# morgan
+		- permite crear logs o mensajes de que es lo que las aplicaciones clientes estan pidiendo al servidor
+		- permite mostrar en consola las peticiones que van llegando al servidor, las peticiones http.
+
+	# bcryptjs
+		- este modulo lo usaremos para cifrar las contraseñas de los usuarios antes de guardarlos en la base de datos
+	
+	# passport
+	{
+		# passport
+			- es un modulo bastante popular en node para la autenticacion
+			- es un modulo para autenticar, y manejar el proceso de login de un usuario en nuestra aplicacion
+			* Tiene metodos que nos permite iniciar sesion o logearnos usando el correo o aplicaciones como facebook o google 
+	
+		# passport-local
+			- es un complemento de passport para autenticar a los usuarios con nuestra propia base de datos
+	}
+
+	# timeago.js
+		- nos ayuda a manejar las fechas
+		- convierte los timestamps o fechas de la base de datos a un formato de: 2 minutos ago, 2 hours ago, etc...
+		- nos va a servir en las views
+
+	# connect-flash
+		- enviar mensajes entre multiples vistas 
+		- lo usaremos para mostrar mensajes de error y exito cuando el usuario realice una operacion
+}
+
+
+___________________________________________________________________________--
+
+
+# src/index.js
+	- Es el archivo que va a arrancar la aplicacion 
+
+# src/database.js
+	- Es el archivo que va a tener la conexion a mysql 
+
+# src/keys.js
+	- Nos va a servir para almacenar las posibles palabras claves o secrets para utlizar en servicios, por ejmeplo nuestro numero de puerto, la conexion a la BDD, la contraseña, la direccion de donde esta la base de datos y demas 
+
+# El comando nodemon automaticamente busca el archivo index.js, asi que no es necesario ponerlo
+
+_________________________________________________________________________
+
+# defaultLayout/ el nombre de la plantilla principal que vamos a usar 
+
+# /layouts/ donde van a estar todos los diseños
+
+# __dirname 
+	- Nos devuelve la direccion del archivo donde se esta ejecutando 
+
+# La carpeta /partials/ sirve para colocar pedazos de codigo que podemos usar en nuestras vistas
+
+# extname 
+	Es para decirle que nombre tendran los archivos de handlebars
+
+# express.urlcoded()
+	- sirve para aceptar desde los formularios los datos que me envien los usuarios 
+
+	# extended: false
+		- Sirve para decir que solo vamos a aceptar nombres, strings o datos bastante sencillos, no voy a aceptar imagenes ni nada de eso
+
+# /src/views/links/
+	- vamos a almacenar todas las vistas relacionadas con los enlaces, por ejemplo, si creo crear un formulario para almacenar enlaces lo guardo aqui, si quiero crear una tabla para listar los enlaces lo guardo aqui, y todo lo relacionado con los enlaces 
