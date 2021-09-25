@@ -1,0 +1,112 @@
+---------------------- TIPOS DATOS
+
+number
+	-1, 2.3, 100
+
+string
+	'hola mundo', ``, "hola"
+
+boolean 
+	true, false
+
+---------------- DEFINIR VARIABLES
+
+# Anotacion de tipos
+	Nosotros indicamos a typescript que tipo de dato usar en una variable
+
+		* const/let nombre:tipo;
+			let valor1:number;
+
+		* const/let nombre:tipo = valor;
+
+# Inferencia de tipos
+	Typescript se encarga de asignar el tipo de dato dependiendo del valor inicial de una varialbe
+
+		* const/let nombre = valor;
+
+------------- TIPOS DE DATOS
+
+Primitivos
+	# string, number, boolean, null, undefined
+
+Object (no primitivo)
+	# Puede ser cualquir dato primitivo
+
+	{nombre: 'marlon', edad: 23}
+
+------------------ 3 ARRAYS
+
+any[] 
+	# cualquier tipo de dato
+
+-------------------- 4 TUPLAS
+
+En las tuplas restringimos el tipo de dato que va a ser cada una de las posiciones dentro del arreglo
+
+--------------------- 5 ENUMS
+
+Son tipos de datos que enumaramos valores que son fijos en un proyecto
+
+{izquierda, derecha}
+
+---------------------- 6 ANY()
+
+El tipo de dato any() no es recomendado. Lo ideal es que typescript identifique el tipo de dato.
+
+----------------------- 7 UNION
+
+Nos permite ir colocando distintos tipos de datos dentro de una variable y los vamos separando con un signo que representa OR '|'
+
+--------------------- 8 LITERAL
+
+------------------- 9 CREANDO FUNCIONES
+ 
+ Diferencia entre void y never
+	Void puede devolver algo si se lo indicamos
+	never nunca va retornar nada
+
+------------------- 10 CALLBACKS	
+
+-------------------- 11 ITERFACES
+
+---------------------12 DIFERENCIA ENTRE TYPES E INTERFACES
+
+# Las intefaces son solo para definir estructuras de un objeto, type es un poco mas flexible
+
+---------------------- 13 CLASES
+
+readonly 
+	# solo existe en typescript
+
+
+------------------------- 14 HERENCIA
+
+public
+	Pueden ser llamados desde cualquier lugar
+
+private
+	Pueden ser llamados solamente desde la misma clase
+
+protected
+	Pueden ser llamados solamente desde la misma clae y de sus clases derivada, de las clases hijas
+
+------------------------ 15 METODOS ESTATICOS
+
+Es util para propiedades que son parte de la clase pero no varian con el tiempo, por ejemplo la clase Math que podemos acceder a sus metodos sin necesidad de instanciar la clase.
+
+En metodos estaticos solo podemos usar los atritubos que tambien son estaticos
+
+----------------------- 16 CLASES ABSTRACTAS
+
+El termino de abstracto significa que necesito de alguien mas para poder ser utilizado, las clases hijas por ejemplo
+
+Mediante el keyword abstract creamos una clase abstracta. Y lo que decimos es que no podemos instanciar a la clase padre, pero si a sus hijas. 
+
+Tambien podemos crear metodos abstractos, los declaramos en la clase padre pero tiene que ser utilizado en las clases hijas 
+
+
+
+
+
+
+
