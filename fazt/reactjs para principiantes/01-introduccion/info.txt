@@ -1,0 +1,31 @@
+
+QUE ES REACT.JS
+React es una biblioteca de javascript que nos permite diseñar interfaces de usuario, elementos en pantalla, botones, navegaciones y poder reutilizarlos.
+
+Es una biblioteca bastante utilizada, esto es algo bueno ya que al haber muchas personas desarrollando vamos a encontrar mucho codigo disponible, codigo opersource que podemos utilizar en nuestras aplicaciones, por ejemplo si creamos un blog y queremos una interfaz ya diseñada, con react vamos a encontrar una enorme cantidad de bibliotecas porque muchas personas lo utilizan. 
+
+Tambien tiene un buen rendimiento ya que al momento de ejecutar una aplicacion, ésta se ejecuta de manera veloz, la razón de esto es porque internamente utiliza algo llamado VIRTUAL DOM que nos permite cambiar algnas partes de la interfaz sin rederizar todo, sin volver a pintar todo como una aplicacion desarrollada desde el backend por ejemplo.
+
+Entonces con react vamos poder diseñar aplicaciones de manera sencilla y sobre todo que son bastante eficientes. Es una de las razones porque react es tan popular.
+
+Una ventaja es que nos permite crear vistas declarativas, es decir lo que queremos mostrar por pantalla vamos a estar viendolo en el codigo, tambien utiliza el concepto de VIRTUAL DOM que nos permite pintar en pantalla o volver a pintar en pantalla un elemento sin tener que refrescar toda la pagina, simplemente cambiamos una pequeña porcion y esto cambia instantaneamente, gracias a esto una aplicacion web se puede comportar como una aplicacion mobil o una aplicacion de escritorio, es decir es muy veloz. 
+
+También nos permite dividir una apliacion grande en pequeñas partes, estas pequeñas partes son porciones de codigo que se llaman componenetes. Los componenetes no son mas que etiquetas HTML por ejemplo que luego vamos a poder reutilizar cuantas veces queramos. 
+
+Tambien puede ser utilizada en el servidor, es util cuando conocemos conceptos como SERVER SIDE RENDERING, esto enviar la interfaz o pequeñas porciones de la intefaz a medida que el usuario lo vaya pidiendo, de esta manera una aplicacion se puede comportar como una aplicacion web, pero puede tener todas las ventajas de javascript puro. 
+
+
+COMPONENTES 
+	# API resusable
+	# Es como crear nuestras propias etiquetas <map/> <icon/>
+	# HTML + CSS + JS = Componente
+	# La etiqueta html es minuscula pero en react se usa en mayuscula
+
+HERRAMEINTAS RELACIONADAS
+
+	# React Native
+	# Next.js
+	# GraphQL
+	# Redux
+	# MERN
+	# Ionic4

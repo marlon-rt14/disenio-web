@@ -1,0 +1,9 @@
+INSTALACION
+
+- INSTALACION DE Node
+
+npx create-react-app my-app
+cd my-app
+npm start
+
+para mayor informacion ver la pagina oficial reactjs.com

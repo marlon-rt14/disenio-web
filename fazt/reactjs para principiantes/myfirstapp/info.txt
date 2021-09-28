@@ -1,0 +1,13 @@
+REACTJS PROJECT STRUCTURE 
+
+README.md
+	# Es una nota que le podemos dejar a otros desarrolladores para que se enteren de que trata nuestro proyecto, por ejemplo el nombre de nuestro proyecto, que comandos pueden utilizar, en que se basa, etc. 
+
+	# Este archivo hace referencia a un texto llamado mardown, que en si es una especie de lenguaje que nos permite describir de manera corta texto largos. Para previsualizarlo podemos usar <Markdown Open Preview> en <ctrl + shift + p> o <F1>
+
+REACT COMPONENT
+
+PROPS (PROPETIES O PROPIEDADES)
+
+ESTADO DE COMPONENTES
+
