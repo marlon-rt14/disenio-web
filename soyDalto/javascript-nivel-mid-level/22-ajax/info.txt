@@ -1,0 +1,36 @@
+AJAX
+
+- Introduccion e instalacion del servidor
+	AJAX significa JavaScript Asincrono y XML. 
+
+	Lo que pasa cuando se hace una solicitud es que por cada solicitud se actualiza la pagina, enviamos la solicitud, esperamos que cargue los datos y nos lo devuelva para actualizar la pagina. esto SINCRONO
+
+	Con AJAX es enviar una solicitud en paralelo, nos responde en paralelo y obtenemos la pagina, todo esto sin actualizar la pagina. ASINCRONO
+
+- Objeto XMLHttpRequest
+	# Es un objeto para peticionar, podemos enviar peticiones GET, POST... 
+
+	# Sintaxis 
+		const peticion = new XMLHttpRequest();
+		peticion.open("tipo-peticion", "URL");
+
+- Enviar peticiones GET
+	# Cuando enviamos una peticion GET quiere decir que la solicitud paso por 4 estados, y lo podemos ver en el evento 'readystatechange'.
+
+	1 = La solicitud se envio correctamente 
+	2 = La solicitud fue recibida correctamente
+	3 = Se esta procesando esta solicitud
+	4 = Que esta todo listo, nos dio una respuesta y que el resultado ya se puede utilizar.
+
+	# Este es el proceso que hace toda solicitud no importa si es correcta o incorrecta, ojo con el 4. Que significa que nos da una respuesta pero no necesariamente debe estar bien, la solicitud puede ser con estado 404, 500, etc. Esos estados son la respuesta al 4.  
+
+- Trabajar el resultado de las peticiones
+
+- Objeto ActiveXObject
+# AJAX no es soportado por todos los navegadores, este objeto es casi igual a XMLHttpRequest pero es para interter explorer. Primero tenemos que identificar que intertet explorer este siendo usado por el usuario
+
+- Nueva forma de trabajar el resultado
+
+- Enviar peticiones POST
+
+- Objeto FormData

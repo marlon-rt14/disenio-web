@@ -1,0 +1,44 @@
+PROTOTIPOS
+
+# Defincion
+	La programacion basada en prototipos es un tipo de programacion que se crean basandose en otros prototipos, mas que por instanciacin en si. 
+
+# Prototype chain (La cadena de prototipos)
+	- Por ejemplo si yo creo un nuevo prototipo, ese prototipo que creé va a tener un prototipo, que es el prototipo padre.
+
+	- TODOS los objetos tienen un protitpo, es decir el __proto__, que es el padre; pero este prototipo ya no puede tener mas prototipos.
+
+	- Todos los objetos heredan dos prototipos, el primero es el tipo de dato y el segundo el el prototipo object 
+
+	- Lo usamos para acceder a los prototipos que nosotros creamos, como por ejemplo cuando creamos una funcion.
+
+	- Y para acceder al prototipo que ya esta heredado usamos __proto__
+
+# Protype object
+	- Todos los objetos al menos un prototipo que es el prototype object.
+
+
+
+
+CARACTERISTICAS
+
+- Un prototipo definido en su codigo fuente es mutable.
+
+- Es en si un mismo objeto, asi como otros
+
+- Tiene una existencia fisica en la memoria
+
+- Puede ser modificado y llamado
+
+- Puede ser visto como un modelo ejemplar de una familia objeto
+
+- Un objeto hereda propiedades (valores y metodos) de su prototipo 
+
+* Cuando creamos una clase y la instanciamos estamos creando un prototipo 
+
+
+
+
+SOBRESCRIBIR __proto__ vs SOBRESCRIBIR metodo
+
+- Primero se ejecutan las funciones que estan adentro, los metodos normales, y despues se ejecutan los que estan adentro del prototipo.

@@ -1,0 +1,26 @@
+AXIOS
+
+- Introduccion e Instalacion
+	# AXIOS es aún un reemplazo mas moderno que FETCH. y aunque no lo crean AXIOS esta basado en XMLHttpRequest. Pero está tan optimizada que no pesa casi nada y cuando queremos trabajar con un sitio web especial para enviar peticiones o solicitudes y recibirlas AXIOS es la mejor opcion. 
+
+	# Una libreria es un conjunto de funciones
+
+	# Un framework es un conjunto de librerias 
+
+	# Si tenemos un codigo JS muy cortito es mejor ponerlo en el docuemento HTML, es lo que Google recomienda 
+
+	# Las librerias debe ponerse antes de todo en el body, antes de que llamemos a nuestros archivos JS al final del body. Si es una libreria que queremos si o si cada vez que el usuario entre a la pagina, la podemos poner el head.
+
+- Basado en promesas
+	# Igualmente esta basado en promesas pero utiliza el objeto XMLHttpRequest para ejecutar sus promesas, por eso es una libreria 
+
+- objeto axios
+	# AXIOS no necesita convertirse, la respuesta no viene encapsulado como lo hace FETCH. Solo ejecutamos un .then() y listo
+	# Al igual que FETCH la peticion por defecto es GET y ademas tambien configura los headers automaticamente
+	# Con AXIOS no hace falta serializar la data
+
+- metodo get() y post()
+
+- formas de enviar los datos
+
+- ventajas

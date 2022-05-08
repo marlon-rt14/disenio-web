@@ -1,0 +1,42 @@
+PETICIONES HTTP
+
+- Definicion
+	Es una peticion que enviamos nosotros al servidor, y este servidor nos devuelve una data, una informacion.
+
+- Cliente & Servidor
+	* Nuestro navegador es el Cliente, la parte del frontend
+	* Y el servidor es el que guarda la inforamcion, el que tiene la pagina web completa
+
+- No guardan informacion
+	Las peticiones HTTP no guardan informacion, una cosas son las cookies, la cache. Esas son perfecciones de este protocolo. LAs peticiones HTTP no dejan rastro.
+
+
+
+
+DATOS ESTRUCTURADOS (JSON) 
+
+json = javascript object notation
+
+- Definicion, usos y sintaxis
+	objeto = {
+		"variable1": "PEDRO",
+		"variable2": "JORGE"
+	}
+
+	Cuando enviamos datos a otro lugar tenemos que enviar de manera serialzada  y cuando los recibimos lo deserializamos
+
+- Serializacion y Deserializacion
+	Decimos que esta serializado cuando es una cadena de texto con formato JSON
+	const objeto = '{"variable1": "PEDRO","variable2": "JORGE"}';
+
+	decimos que esta deserializado cuando
+	objeto = {"variable1": "PEDRO","variable2": "JORGE"}
+
+
+- Metodo parse() - Convierte un string con estructura JSON a formato JSON (deserializar)
+
+- Metodo stringify() - Convierte un dato javascript en una cadena de texto JSON (serializar)
+
+- JSON PoliFill - https://developer.mozilla.org/en-US/docs/web/JavaScript/Reference/Global_Objects/JSON/Parse
+
+	Los PoliFill son funciones que simulan cualquier funcionalidad de JavaScript porque las funciones mas antiguas de intertet explorer no soportan JSON, de esa manera con PoliFill simulamos un JSON

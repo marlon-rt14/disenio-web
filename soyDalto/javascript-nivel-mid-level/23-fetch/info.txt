@@ -1,0 +1,30 @@
+FETCH
+
+- Introduccion 
+	# Es una forma que tenemos de trabajar con el objeto XMLHttpRequest.
+	# Reemplazó a AJAX
+
+- Basado en promesas
+	# Siempre nos devuelve una promesa encapsulada, es decir que no podemos acceder a los dato tan facilmente. Con lo metodos de mas abajo convertimos esa respuesta en un dato válido.
+
+- Objeto fetch
+	# fetch() tiene el metodo GET por defecto, si no lo decimos que sea POST, PUT o lo que sea, fetch() va a asumir que se trata de una peticion GET 
+
+	# Las promesas son asincronas, no tenemos que hacer nada ni esperar a que cambie... como es asincrona cuando tenga el resultado nos va a dar una respuesta.
+
+- text()
+	# Le decimos que nos desencapusle el valor de la promesa en un texto
+	# Nos devuelve un texto. (serializado)
+
+- json()
+	# Le decimos que nos desencapusle el valor de la promesa en un JSON
+	# para que nos devuelva un JSON. (deserializado)
+
+- blob()
+	# Por ejemplo cuando trabajamos con imagenes, el valor que nos devuelve es letras, codigos o figuras sin sentido, como si estuviera encryptado. Ese tipo de dato es blob. 
+
+	# URL.createObjectURL(img) nos crea una especie de ruta imaginaria o temporal en donde se va almacenar esta imagen, pero se almacena solo durante esta peticion, si volvemos a actualizar la pagina nos muestra otra URL de imagen
+
+- formData()
+
+- arrayBuffer()
