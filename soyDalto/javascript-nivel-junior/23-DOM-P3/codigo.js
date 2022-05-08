@@ -1,11 +1,11 @@
-// const titulo = document.querySelector(".titulo");
+const titulo = document.querySelector(".titulo");
 
 // titulo.classList.add("grande");
 
 // titulo.classList.remove("grande");
 
-// let valor = titulo.classList.item(1);
-// document.write(valor);
+let valor = titulo.classList.item(1);
+document.write(valor);
 
 // let nombreDeClase = "grande";
 // let valor = titulo.classList.contains(nombreDeClase);
@@ -24,7 +24,7 @@
 
 //########################################################################################## CREACION DE ELEMENTOS
 
-const titulo = document.querySelector(".titulo");
+// const titulo = document.querySelector(".titulo");
 
 // let resultado = titulo.textContent;
 // let resultado = titulo.innerText;
@@ -34,6 +34,6 @@ const titulo = document.querySelector(".titulo");
 
 // document.write(resultado);
 
-let resultado = titulo.outerHTML;
+// let resultado = titulo.outerHTML;
 
-alert(resultado);
+// alert(resultado);
