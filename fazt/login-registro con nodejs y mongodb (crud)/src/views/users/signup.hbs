@@ -1,0 +1,61 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-5 mx-auto" >
+      <div class="card pt-3 pb-2 px-2 shadow" style="border-radius: 16px;">
+        <div class="card-header text-center bg-light border border-0">
+          <div class="d-flex justify-content-center">
+            <img src="/img/neo-logo.svg" alt="logo" style="width: 15%;" />
+            <p
+              style="font-family: 'Ubuntu', sans-serif; font-weight: 400;"
+              class="display-5 mb-2"
+            >neo<p/>
+          </div>
+          <h3>Sign Up</h3>
+          <p class="text-muted"><small>Create a Noter Account</small></p>
+        </div>
+        <div class="card-body">
+          <form action="/users/signup" method="post" class="mb-0">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                placeholder="Name"
+                autofocus
+								value="{{name}}"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="E-mail"
+								value="{{email}}"
+              />
+            </div>
+            <div class="mb-4 d-flex gap-3">
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                placeholder="Password"
+								value="{{password}}"
+              />
+							<input
+                type="password"
+                class="form-control"
+                name="confirm_password"
+                placeholder="Confirm Password"
+								value="{{confirm_password}}"
+              />
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-primary px-4 py-2" id="liveToastBtn">Next</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

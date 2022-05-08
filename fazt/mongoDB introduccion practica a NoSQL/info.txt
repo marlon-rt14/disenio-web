@@ -1,0 +1,84 @@
+MONGO DB
+
+Mongo DB es una una base de datos Open Source NoSQL, NoSQL significa no Not only SQL. Esto quiere decir que es un tipo de base datos que aplican en donde las bases de datos tipicas (SQL) serian demasiado tedioso de mantener. Aplicaciones que generan datos demasiado rapido, por ejemplo los datos que vienen de redes sociales, juegon online o del analisis de datos de  multiples sitios o BIG DATA,
+
+Es decir Mongo DB es una base de datos que esta enfocada a manejar enorme cantidad de datos que se generan demasiado rapido. Mongo DB es flexible, escalable y de proposito general. Escalable quiere decir que podemos seguir añadiendo mas recursos a nuestra base de datos simplemente agregando mas servidores; este es el enfoque utilizado hoy en dia en internet. Tambien se le llama de proposito general porque puede ser utilizado en cualquier tipo de aplicacion. 
+
+TABLA = COLLECTION 
+FILA = DOCUMENTO
+
+{
+	"nombre":"laptop", 
+	"precio":40.2, 
+	"active":true, 
+	"created_at":new Date("12/12/1999"),
+	"x": /foobar/i, 
+	"somedate": [1, "a", []],
+	"factucterer": { 
+		"name":"dell",
+		"version":"xps",
+		"location": {
+			"city":"usa",
+			"address":"assdaf"
+		}
+	}
+}
+
+CARACTERISTICAS DE USO
+- MongoDB no va a crear una nueva base de datos a menos que insertemos al menos un dato.
+
+// insertar un nuevo documento
+# db.products.insert({"name": "laptop"})
+
+# db.products.drop()
+
+# db.createCollection("name_collection)
+
+// listar todos los productos de una coleccion
+# db.products.find()
+
+# db.products.find({key: "value"})
+
+# db.products.find({"tags":"computers", "name":"monitor"})
+
+// nos devuelve la primera coincidencia
+# db.products.findOne({key: "value"})
+
+// cuando queremos mostrar solo determinados valores. Tomando como ejemplo la tabla; cuando queremos mostrar solo ciertas columnas.
+# db.products.find({"tags":"computers"}, {"name":1,"description":1})
+
+// cuando no queremos mostrar el ID
+# db.products.find({"tags":"computers"}, {"name":1,"description":1, "_id":0})
+
+// nos devuelve los datos ordenados por el valor de la propiedad
+db.products.find({"tags":"computers"}).sort({name: 1})
+
+// cuando listar solo un limite y no todos los registros
+db.products.find().limit(2)
+
+// cuando queremos saber cuantos documentos tenemos hasta el momento
+db.products.countDocuments()
+
+// interactuamos con los datos con un forEach
+db.products.find().forEach(product => print("Prodcut name:" + product.name))
+
+// para cuando queremos actualizar un valor (ver la documentacion para mayor informacion)
+db.products.updateOne({ name: "teclado" }, { $set: {"price": 999.99} })
+
+// insertar un dato a travez del metodo update
+# db.products.updateOne({ name: "desktop" }, { $set: {"name": "desktop","description": "gaming desktop"} }, {upsert: true})
+
+// incrementamos en el valor de un dato numerico
+db.products.updateOne({name: "keyboard"}, {$inc:{"price": 0.01 }, $currentDate:{lastModified: true}})
+
+// cuando queremos renombrar una propiedad
+db.products.update({name: "laptop"},{$rename:{"name": "nombre"}})
+
+// para eliminar un documento
+db.products.deleteOne({key: "value"})
+
+
+
+CRUD
+
+
